@@ -1,4 +1,4 @@
-# C2C 購物爭議助手 (SNAD Decision Engine)
+# C2C 購物爭議助手 (Shopping dispute helper)
 
 本專案實作一套 **C2C 平台「商品與描述不符（SNAD）」爭議分析流程**，
 針對二手交易情境（例如：手機維修未揭露、商品外觀差異、功能不符描述）進行：
