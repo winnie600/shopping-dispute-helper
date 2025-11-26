@@ -220,6 +220,7 @@ PyPDF2
 * prompt調整(中英文問題、準確度)
 * 串接前端
 * 非test的chat history
+* 程序判斷R1、R2、R3 而非目前在product.json檔案用布林值的範例
 
 
   
