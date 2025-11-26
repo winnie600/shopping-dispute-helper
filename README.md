@@ -82,7 +82,7 @@ ollama serve
 ollama pull gemma3:1b
 ```
 
-（若你的記憶體允許，也可使用 gemma3:2b 或 4b。）
+（若你的記憶體允許，也可使用 gemma3:4b或9b。）
 
 ---
 
