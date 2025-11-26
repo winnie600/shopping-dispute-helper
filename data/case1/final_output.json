@@ -1,0 +1,53 @@
+{
+  "eligibility": {
+    "is_eligible": true,
+    "checks": [
+      {
+        "rule": "R1 [ELI-301]",
+        "pass": true,
+        "reason": "交易類型為 7-11_cod；is_platform_protected=True"
+      },
+      {
+        "rule": "R2 [ELI-302]",
+        "pass": true,
+        "reason": "根據 timestamps 或人工判斷：是否在爭議期限內提出"
+      },
+      {
+        "rule": "R3 [ELI-303]",
+        "pass": true,
+        "reason": "訂單狀態為 shipped"
+      }
+    ]
+  },
+  "snad_assessment": {
+    "is_snad": true,
+    "reasoning": "R1/R2/R3 成功，交易類型是7-11_cod，使用App內付款/Escrow，且用戶在收貨後24-48小時內提出爭議。",
+    "policy_citations": [
+      "SND-501",
+      "EVD-701"
+    ]
+  },
+  "evidence_checklist": {
+    "provided": [
+      "EVD-701",
+      "EVD-702",
+      "EVD-703",
+      "EVD-704",
+      "EVD-705"
+    ],
+    "missing": [
+      "EVD-706"
+    ],
+    "notes": []
+  },
+  "cs_summary": {
+    "short_summary": "Buyer 检查显示屏，发现屏幕已更换。Apple 支持显示 'Genuine Apple Part – Display replaced'，但未提及。需要退回商品进行退款。",
+    "key_points": "Buyer 检查显示屏，发现屏幕已更换。Apple 支持显示 'Genuine Apple Part – Display replaced'，但未提及。需要退回商品进行退款。",
+    "suggested_resolution": [
+      "A) 申请退款",
+      "B) 检查显示屏",
+      "C) 确认购买历史",
+      "D) 询问维修历史"
+    ]
+  }
+}

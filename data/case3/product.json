@@ -1,0 +1,35 @@
+{
+  "order": {
+    "order_id": "TW-CASE3-2025",
+    "transaction_type": "7-11_cod",
+    "is_platform_protected": true,
+    "order_status": "shipped"
+  },
+
+  "item": {
+    "title": "iPhone 12 (Battery Health 83%)",
+    "price_twd": 8200,
+    "condition": "Used",
+    "disclosed_flaws": [
+      "Battery health 83%",
+      "Minor frame scuffs (based on seller chat description)"
+    ],
+    "attributes": {
+      "brand": "Apple",
+      "model": "iPhone 12",
+      "capacity": "64GB",
+      "color": "Black"
+    }
+  },
+
+  "timestamps": {
+    "picked_up_at": "2025-10-08T16:55:00",
+    "dispute_opened_at": "2025-10-08T18:10:00"
+  },
+
+  "eligibility_flags": {
+    "r1_platform_or_7_11_cod": true,
+    "r2_within_dispute_window": true,
+    "r3_not_completed": true
+  }
+}

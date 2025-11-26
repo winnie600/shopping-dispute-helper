@@ -1,0 +1,47 @@
+{
+  "eligibility": {
+    "is_eligible": true,
+    "checks": [
+      {
+        "rule": "R1 [ELI-301]",
+        "pass": true,
+        "reason": "交易類型為 7-11_cod；is_platform_protected=True"
+      },
+      {
+        "rule": "R2 [ELI-302]",
+        "pass": true,
+        "reason": "根據 timestamps 或人工判斷：是否在爭議期限內提出"
+      },
+      {
+        "rule": "R3 [ELI-303]",
+        "pass": true,
+        "reason": "訂單狀態為 shipped"
+      }
+    ]
+  },
+  "snad_assessment": {
+    "is_snad": true,
+    "reasoning": "R1/R2/R3 全通過：交易類型為 7-11_cod；is_platform_protected=True；訂單狀態為 shipped。符合所有條件。",
+    "policy_citations": [
+      "SND-501",
+      "EVD-701"
+    ]
+  },
+  "evidence_checklist": {
+    "provided": [
+      "EVD-701",
+      "EVD-702"
+    ],
+    "missing": [
+      "EVD-703"
+    ],
+    "notes": []
+  },
+  "cs_summary": {
+    "short_summary": "案件符合所有條件，需要进一步调查瑕疵和用户反馈。",
+    "key_points": "Nike Air Jordan 1 OG，Size US9 (27cm)，Minor crease on toe box (photo 3)，Like new，Seller Fault，User claims sizing is true.  Order ID: TW-11021。  需要检查图片，确认瑕疵。",
+    "suggested_resolution": [
+      "A) 检查图片，确认瑕疵；B) 确认用户是否需要退款；C) 确认订单状态是否为已完成订单。"
+    ]
+  }
+}

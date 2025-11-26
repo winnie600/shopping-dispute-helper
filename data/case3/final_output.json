@@ -1,0 +1,47 @@
+{
+  "eligibility": {
+    "is_eligible": true,
+    "checks": [
+      {
+        "rule": "R1 [ELI-301]",
+        "pass": true,
+        "reason": "交易類型為 7-11_cod；is_platform_protected=True"
+      },
+      {
+        "rule": "R2 [ELI-302]",
+        "pass": true,
+        "reason": "根據 timestamps 或人工判斷：是否在爭議期限內提出"
+      },
+      {
+        "rule": "R3 [ELI-303]",
+        "pass": true,
+        "reason": "訂單狀態為 shipped"
+      }
+    ]
+  },
+  "snad_assessment": {
+    "is_snad": true,
+    "reasoning": "R1/R2/R3 全通過：交易類型為 7-11_cod；is_platform_protected=True；訂單狀態為 shipped。",
+    "policy_citations": [
+      "SND-501",
+      "EVD-701"
+    ]
+  },
+  "evidence_checklist": {
+    "provided": [
+      "EVD-701",
+      "EVD-702"
+    ],
+    "missing": [
+      "EVD-703"
+    ],
+    "notes": [
+      "未提供鞋子尺寸信息"
+    ]
+  },
+  "cs_summary": {
+    "short_summary": "案件已成功通過 SNAD 評估，需要進一步檢查鞋子尺寸和瑕疵，並確認賣家提供了完整資訊。",
+    "key_points": "需要確認鞋子尺寸是否正確，並檢查賣家提供的鞋子狀況，確保賣家提供完整資訊。",
+    "suggested_resolution": "1. 檢查鞋子尺寸，並與購買紀錄進行比較；2. 檢查賣家提供的鞋子狀況，確保賣家提供完整資訊；3. 考慮退貨/換貨，若鞋子尺寸不符。"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "order": {
+    "order_id": "TW-CASE2-2025",
+    "transaction_type": "7-11_cod",
+    "is_platform_protected": true,
+    "order_status": "shipped"
+  },
+
+  "item": {
+    "title": "iPhone 14 Pro 256GB Deep Purple",
+    "price_twd": 23500,
+    "condition": "Used - Good",
+    "disclosed_flaws": [
+      "Minor scratch on the camera ring",
+      "No charging cable"
+    ],
+    "attributes": {
+      "capacity": "256GB",
+      "color": "Deep Purple",
+      "model": "iPhone 14 Pro",
+      "ios_version": "17.x"
+    }
+  },
+
+  "timestamps": {
+    "picked_up_at": "2025-10-05T19:10:00",
+    "dispute_opened_at": "2025-10-05T20:30:00"
+  },
+
+  "eligibility_flags": {
+    "r1_platform_or_7_11_cod": true,
+    "r2_within_dispute_window": true,
+    "r3_not_completed": true
+  }
+}

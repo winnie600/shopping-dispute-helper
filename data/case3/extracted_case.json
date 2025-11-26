@@ -1,0 +1,23 @@
+{
+  "product_summary": "(由 Stage2 或 product.json 補充，不在 Stage1 處理)",
+  "seller_claims": [
+    "Sony WH-1000XM4 Wireless Headphones - Available",
+    "Seller: Comes with the pouch shown in the photo, no box.",
+    "Seller sold what's in the photos, didn't include it"
+  ],
+  "buyer_claims": [
+    "Are the headphones still available?",
+    "Buyer sees original box includes one",
+    "Buyer: Got it. Can do NT$4,000?"
+  ],
+  "timeline": [
+    "2025-10-10 14:02 - 2025-10-10 14:07",
+    "2025-10-13 09:25 - 2025-10-13 09:35",
+    "[2025-10-10] [2025-10-10] [2025-10-10]"
+  ],
+  "potential_issues": [
+    "Order created (Order ID: TW-12033)",
+    "Missing Accessory - No Clear Fault",
+    "No clear fault (Neutral SNAD – lack of clarity on both sides)"
+  ]
+}

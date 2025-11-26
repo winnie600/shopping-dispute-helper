@@ -1,0 +1,57 @@
+{
+  "product_summary": "(由 Stage2 或 product.json 補充，不在 Stage1 處理)",
+  "seller_claims": [
+    "Still available",
+    "Same as shown",
+    "Buyer has 24 hours to accept an alternative or Raise to Carousell Support.",
+    "Seller includes a third-party cable.",
+    "Seller has declined.",
+    "System created order (Order ID: TW-10567).",
+    "Seller claims Face ID works.",
+    "Seller shipped it via 7-Eleven (ibon). You should get it tomorrow.",
+    "Kept in great condition",
+    "Seller will do.",
+    "Seller lists a price around 9.5k."
+  ],
+  "buyer_claims": [
+    "Battery health?",
+    "Buyer wants 7-ELEVEN COD pickup.",
+    "Buyer wants to check display brightness.",
+    "Non-disclosure of repair history is misleading.",
+    "Raise to Support.",
+    "Yellow tint or display issues?",
+    "Buyer is busy and can't meet in person.",
+    "Buyer wants a Return & Full Refund.",
+    "Picked up and paid (item + NT$60 COD). Thanks!"
+  ],
+  "timeline": [
+    "2025-10-05 12:08",
+    "2025-10-05 12:22",
+    "2025-10-05 12:12",
+    "20:05 - 20:06",
+    "2025-10-05 12:02",
+    "20:41 - 20:41",
+    "2025-10-05 12:16",
+    "2025-10-07 20:20 - 20:40",
+    "2025-10-05 13:22 - 2025-10-06 10:15",
+    "2025-10-05 12:24",
+    "2025-10-05 12:26",
+    "2025-10-05 12:27",
+    "2025-10-05 11:58",
+    "2025-10-05 12:19"
+  ],
+  "potential_issues": [
+    "Buyer checked and found the screen was replaced. Apple Support shows 'Genuine Apple Part – Display replaced'.  The listing and chat never mentioned this.  I'd like to return the item for a refund.",
+    "Return/Refund request received.",
+    "Buyer wants to check display brightness.",
+    "No earphones included",
+    "Very light scratch on the bottom frame (photo 4)",
+    "Buyer picked up and paid (item + NT$60 COD).",
+    "Buyer wants a Return & Full Refund.",
+    "Package arrived at 7-Eleven Minsheng pickup store (Songshan).",
+    "Buyer is busy and can't meet in person.",
+    "Seller lists a price around 9.5k.",
+    "Buyer wants to raise to Carousell Support.",
+    "Order metadata event timestamp (UTC+8)."
+  ]
+}

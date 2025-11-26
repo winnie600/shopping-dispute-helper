@@ -1,0 +1,33 @@
+{
+  "order": {
+    "order_id": "C2C-CASE1-0001",
+    "transaction_type": "7-11_cod",       
+    "is_platform_protected": true,        
+    "order_status": "shipped"             
+  },
+  "item": {
+    "title": "iPhone 12 128GB — Like New (Blue)",
+    "price_twd": 9500,
+    "condition": "Like New",
+    "disclosed_flaws": [
+      "下邊框極輕微刮痕（圖 4）",
+      "不附耳機"
+    ],
+    "attributes": {
+      "brand": "Apple",
+      "model": "iPhone 12",
+      "capacity": "128GB",
+      "color": "Blue",
+      "os_version": "iOS 17.xx"
+    }
+  },
+  "timestamps": {
+    "picked_up_at": "2025-01-18T15:40:00",
+    "dispute_opened_at": "2025-01-18T17:00:00"
+  },
+  "eligibility_flags": {
+    "r1_platform_or_7_11_cod": true,
+    "r2_within_dispute_window": true,
+    "r3_not_completed": true
+  }
+}
