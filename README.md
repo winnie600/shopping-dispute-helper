@@ -10,7 +10,8 @@
 
 ## Requirement
 前端:  
-後端:
+後端: langchain-ollama typing-extensions>=4.6
+
 
 ## System architecture
 
