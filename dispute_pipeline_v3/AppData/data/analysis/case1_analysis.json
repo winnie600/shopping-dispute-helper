@@ -1,0 +1,39 @@
+{
+  "eligibility": {
+    "r1": true,
+    "r2": true,
+    "r3": true,
+    "notes": "In-app + 7-ELEVEN COD; opened ~15h after pickup; Order is not yet completed",
+    "policyAnchors": [
+      "ELI-301",
+      "ELI-302",
+      "ELI-303"
+    ]
+  },
+  "snadResult": {
+    "label": "SNAD",
+    "reason": "The seller failed to disclose the screen replacement, which is a material mismatch between the listing and delivered item. The seller’s statement 'Genuine Apple Part – Display replaced' is misleading and lacks sufficient detail to establish a clear mismatch.",
+    "policyAnchors": [
+      "SND-501"
+    ]
+  },
+  "recommendation": {
+    "primaryOption": {
+      "label": "Return & Full Refund",
+      "details": " Seller reimburses NT$60 COD shipping and provides a return label.",
+      "policyAnchors": [
+        "OUT-801",
+        "FEE-A"
+      ]
+    },
+    "alternativeOption": {
+      "label": "Partial Refund & Keep Item",
+      "details": "Buyer keeps the item; offer 15–30% partial refund.",
+      "policyAnchors": [
+        "OUT-802",
+        "FEE-C"
+      ]
+    }
+  },
+  "caseSummary": "Order: TW-10567\nEligibility: R1/R2/R3 ✅\nKey: The seller failed to disclose the screen replacement, which is a material mismatch between the listing and delivered item. The seller’s statement 'Genuine Apple Part – Display replaced' is misleading and lacks sufficient detail to establish a clear mismatch.\nDecision: SNAD\nOutcome: The dispute was settled with the Seller issuing a full refund and return label."
+}

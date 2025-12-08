@@ -1,0 +1,35 @@
+{
+  "eligibility": {
+    "r1": true,
+    "r2": true,
+    "r3": true,
+    "notes": "In-app + 7-ELEVEN COD; opened ~15h after pickup; Order is not yet completed",
+    "policyAnchors": [
+      "ELI-301",
+      "ELI-302",
+      "ELI-303"
+    ]
+  },
+  "snadResult": {
+    "label": "SNAD",
+    "reason": "The seller provided an incorrect key information – the screen was replaced.  The listing and chat never mentioned this.  The seller’s stated ‘Genuine Apple Part’ is a material mismatch, as the screen replacement is not disclosed.",
+    "policyAnchors": [
+      "SND-501"
+    ]
+  },
+  "recommendation": {
+    "primaryOption": {
+      "policyAnchors": [
+        "OUT-801",
+        "FEE-A"
+      ]
+    },
+    "alternativeOption": {
+      "policyAnchors": [
+        "OUT-802",
+        "FEE-C"
+      ]
+    }
+  },
+  "caseSummary": "Order: TW-10567\nEligibility: R1/R2/R3 ✅\nKey: The seller provided an incorrect key information – the screen was replaced.  The listing and chat never mentioned this.  The seller’s stated ‘Genuine Apple Part’ is a material mismatch, as the screen replacement is not disclosed.\nDecision: SNAD\nOutcome: The buyer accepted the return and full refund, and the seller will provide a return label and reimbursement."
+}

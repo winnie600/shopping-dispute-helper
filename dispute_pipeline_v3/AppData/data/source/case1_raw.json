@@ -1,0 +1,77 @@
+{
+  "id": "case1",
+  "title": "iPhone 12 128GB — Like New (Blue)",
+
+  "transactionMethod": "In-app + 7-ELEVEN COD",
+  "disputeOpenedAfterHours": 15,
+  "orderCompleted": false,
+
+  "listingInfo": {
+    "title": "iPhone 12 128GB — Like New (Blue)",
+    "listedPrice": "NT$9,500",
+    "condition": "Like new",
+    "disclosedFlaws": "Very light scratch on the bottom frame (photo 4), no earphones included",
+    "attributes": "Blue color, 128GB, iOS 17.xx; Battery ~88% (confirmed in chat)",
+    "photos": [
+      { "url": "/images/case 1/iph12_front.jpg", "label": "front" },
+      { "url": "/images/case 1/iph12_back.jpg", "label": "back" },
+      { "url": "/images/case 1/iph12_scratch.jpg", "label": "scratch close-up" }
+    ]
+  },
+  "orderMeta": [
+    { "label": "Order ID", "value": "TW-10567" },
+    { "label": "Transaction Method", "value": "In-app + 7-ELEVEN COD" },
+    { "label": "Dispute Opened After", "value": "15h after pickup" },
+    { "label": "Order Completed", "value": "No" }
+  ],
+  "complaint": "Undisclosed screen replacement. Apple Support shows “Display – Genuine Apple Part (Replaced)”.",
+  "chatLog": [
+    { "timestamp": "2025-10-05 11:58", "sender": "Buyer", "text": "Hi, is the phone still available? Same condition as in the photos?" },
+    { "timestamp": "2025-10-05 12:02", "sender": "Seller", "text": "Yes, still available. Same as shown. I’ve kept it in great condition — only a tiny scratch on the lower frame (see photo 4)." },
+    { "timestamp": "2025-10-05 12:05", "sender": "Buyer", "text": "What’s the battery health? Any yellow tint or display issues? True Tone okay?" },
+    { "timestamp": "2025-10-05 12:08", "sender": "Seller", "text": "Around 88%, runs smoothly. Screen is fine, True Tone normal." },
+    { "timestamp": "2025-10-05 12:10", "sender": "Buyer", "text": "Has it ever been repaired or had any parts replaced? Face ID works?" },
+    { "timestamp": "2025-10-05 12:12", "sender": "Seller", "text": "Face ID works. Haven’t done any major repairs." },
+    { "timestamp": "2025-10-05 12:16", "sender": "Buyer", "text": "Can you lower the price a bit? I’ve seen some listed around 9.0–9.2k." },
+    { "timestamp": "2025-10-05 12:19", "sender": "Seller", "text": "I listed 9.5 because it’s in excellent shape. If you confirm now, I can do 9.2." },
+    { "timestamp": "2025-10-05 12:22", "sender": "Buyer", "text": "Okay, 9.2 works. Can we do 7-ELEVEN COD? I’m busy and can’t meet in person." },
+    { "timestamp": "2025-10-05 12:24", "sender": "Seller", "text": "Sure. Send me your preferred 7-ELEVEN pickup store." },
+    { "timestamp": "2025-10-05 12:26", "sender": "Buyer", "text": "7-ELEVEN Minsheng (Songshan). How much is the shipping?" },
+    { "timestamp": "2025-10-05 12:27", "sender": "Seller", "text": "COD shipping fee is NT$60, paid at pickup." },
+    { "timestamp": "2025-10-05 12:30", "sender": "Buyer", "text": "Okay. Does it come with a charging cable?" },
+    { "timestamp": "2025-10-05 12:31", "sender": "Seller", "text": "No earphones, but I’ll include a third-party cable." },
+    { "timestamp": "2025-10-05 12:33", "sender": "Buyer", "text": "Could you send one photo with a white background and screen brightness ~80% so I can check the display?" },
+    { "timestamp": "2025-10-05 12:36", "sender": "Seller", "text": "(sends photo) Took it under warm indoor light — looks fine." },
+    { "timestamp": "2025-10-05 12:39", "sender": "Buyer", "text": "Looks good. Please create the order on the app." },
+    { "timestamp": "2025-10-05 12:41", "sender": "Seller", "text": "Will do." },
+
+    { "timestamp": "2025-10-05 13:22", "sender": "System", "text": "Order created (Order ID: TW-10567)." },
+    { "timestamp": "2025-10-06 10:15", "sender": "Seller", "text": "I’ve shipped it via 7-ELEVEN (ibon). You should get it tomorrow." },
+    { "timestamp": "2025-10-07 09:00", "sender": "System", "text": "Package arrived at 7-ELEVEN Minsheng." },
+    { "timestamp": "2025-10-07 18:40", "sender": "Buyer", "text": "Just picked it up and paid (item + NT$60 COD). Thanks!" },
+
+    { "timestamp": "2025-10-07 20:05", "sender": "Buyer", "text": "I checked and found the screen has been replaced. Apple Support shows “Genuine Apple Part – Display replaced” (see attached screenshot). The listing and chat never mentioned this. I’d like to return the item for a refund.", "highlight": true },
+
+    { "timestamp": "2025-10-07 20:12", "sender": "Seller", "text": "The screen is genuine Apple, I have the service record. You didn’t ask, so I didn’t bring it up." },
+
+    { "timestamp": "2025-10-07 20:18", "sender": "Buyer", "text": "A screen replacement — even genuine — is material information that must be disclosed. You also said “no major repairs.” I’m filing a Return/Refund request." },
+
+    { "timestamp": "2025-10-07 20:20", "sender": "AI", "text": "Return/Refund request received. Seller has 24 hours to: Accept / Decline / Counter-offer.\n\nTip:\n• Buyer — please upload Apple Support screenshots & comparison photos.\n• Seller — provide Apple service proof if available." },
+
+    { "timestamp": "2025-10-07 20:24", "sender": "Buyer", "text": "(uploads screenshot showing “Display – Genuine Apple Part (Replaced)” with matching IMEI)" },
+
+    { "timestamp": "2025-10-07 20:40", "sender": "Seller", "text": "I decline. It’s a genuine screen and you didn’t ask. I don’t see the issue." },
+
+    { "timestamp": "2025-10-07 20:41", "sender": "AI", "text": "Seller has “Declined.” Buyer has 24h to accept an alternative or Raise to Carousell Support.\n\nTip:\n• If you wish to keep the item, consider a Partial refund.\n• If you prefer Return & Full, please confirm for case escalation." },
+
+    { "timestamp": "2025-10-08 10:05", "sender": "Buyer", "text": "I want a Return & Full Refund. Non-disclosure of repair history is misleading. I’ll Raise to Support." },
+    { "timestamp": "2025-10-08 10:06", "sender": "Buyer", "text": "(clicks “Raise to Carousell Support”)" },
+
+    { "timestamp": "2025-10-08 10:10", "sender": "AI", "text": "Preliminary finding — SNAD due to non-disclosure.\n\nRecommended:\nA) Return & Full Refund (Seller covers NT$60 + return label),\nOR\nB) Keep & Partial Refund (15–30%) if Buyer chooses to keep.\n\nPlease respond within 24h to avoid automatic escalation." },
+
+    { "timestamp": "2025-10-08 10:18", "sender": "Seller", "text": "Understood. If that’s the process, I’ll accept Return & Full Refund. I’ll reimburse the NT$60 and send the 7-ELEVEN return label today." },
+
+    { "timestamp": "2025-10-08 10:22", "sender": "Buyer", "text": "Agreed. I’ll ship it back within 48h, record the packing video, and keep the receipt." },
+    { "timestamp": "2025-10-08 10:23", "sender": "AI", "text": "Agreement recorded. System will generate return instructions for Buyer." }
+  ]
+}
