@@ -234,15 +234,12 @@ python src\arbitration_pipeline.py --case-id case1 --data-dir .\data\source --ou
 
 ## ❗ 遇到的問題（已解決）
 
-### 1. ver3 模組化版本推理不穩
 
-→ 回到 ver2，一次 prompt 產生所有內容。
-
-### 2. JSON reason 欄位空白
+### 1. JSON reason 欄位空白
 
 → Neutral 不需 reason → 由 prompt 修正。
 
-### 3. RAG chunk 錯誤
+### 2. RAG chunk 錯誤
 
 → 文本量太小，不適合 RAG → 改 direct prompt。
 
