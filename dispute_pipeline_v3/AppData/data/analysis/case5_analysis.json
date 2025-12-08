@@ -1,0 +1,39 @@
+{
+  "eligibility": {
+    "r1": true,
+    "r2": true,
+    "r3": true,
+    "notes": "7-11 COD; opened ~16h after pickup; Order is not yet completed",
+    "policyAnchors": [
+      "ELI-301",
+      "ELI-302",
+      "ELI-303"
+    ]
+  },
+  "snadResult": {
+    "label": "Neutral",
+    "reason": "The buyer expresses dissatisfaction with the item's functionality but does not present a material mismatch. The buyer's request for a return is based on their personal preference rather than a difference in the item's characteristics.",
+    "policyAnchors": [
+      "SND-502"
+    ]
+  },
+  "recommendation": {
+    "primaryOption": {
+      "label": "Partial Refund & Keep Item",
+      "details": "Buyer keeps the item; offer 15–30% partial refund.",
+      "policyAnchors": [
+        "OUT-802",
+        "FEE-C"
+      ]
+    },
+    "alternativeOption": {
+      "label": "Return & Refund",
+      "details": "Buyer covers NT$60 COD shipping.",
+      "policyAnchors": [
+        "OUT-801",
+        "FEE-B"
+      ]
+    }
+  },
+  "caseSummary": "Order: TW-14012\nEligibility: R1/R2/R3 ✅\nKey: The buyer expresses dissatisfaction with the item's functionality but does not present a material mismatch. The buyer's request for a return is based on their personal preference rather than a difference in the item's characteristics.\nDecision: Neutral\nOutcome: The seller refused to accept the return, citing the product’s lack of issues as the reason for the decision."
+}
