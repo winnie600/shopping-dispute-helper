@@ -92,6 +92,82 @@ v3 強調 **模組拆分、可維護性、可測試性與可擴充性**，每個
 }
 ```
 
+下面我幫你生成 **README 內容（介紹你的 Stage2 Prompt）**，並且清楚標示 **要放在 `stage2_llm.py` 的哪裡**。
+
+---
+
+# ✅ **README：Stage 2 Prompt（ver3）介紹區塊**
+
+以下是一段可以直接放進 README.md 的 **「Prompt Design」章節**：
+
+---
+
+## 🏛 Stage 2 LLM Prompt Design（ver3）
+
+本系統在 Stage 2 採用 **高度結構化、政策導向（policy-driven）** 的 Prompt，以確保模型遵循 Carousell 的 SNAD 裁定標準，不會產生偏誤或亂判 SNAD。
+
+LLM 的任務：
+
+1. 根據政策判定：
+   **SNAD / Neutral / Insufficient Evidence**
+2. 強制輸出 JSON
+3. 強制產生 reason（所有 label 都需要 reason）
+4. SNAD 僅限於「客觀、重大、不符描述」的 mismatch
+5. Fit/snugness 類型一律 Neutral（若 size label 正確）
+
+Prompt 導入的核心策略：
+
+### ✔ 明確 SNAD 判定條件
+
+* 必須具備 **objective mismatch**
+* 必須具備 **material mismatch**
+* 必須是 **seller 描述錯誤或未披露**
+  若有一項不成立 → 必須 Neutral。
+
+### ✔ Fit Rule（模型最容易誤判的問題 → 已強化）
+
+* 「偏小、偏緊、fit 不合」皆為主觀感受
+* 除非 **尺寸標籤本身錯誤**，否則永遠不能 SNAD
+  → 大幅提高模型穩定性（對 Case 2、Case 3 都有效）
+
+### ✔ 輸出格式強制為 JSON
+
+避免模型輸出的自然語言干擾後端 parse。
+
+### ✔ reason 強制存在
+
+避免模型省略 reason（Case 2 常見問題）。
+
+---
+
+### 🧩 Prompt 連同政策規則會在 `stage2_llm.py` 中以常數 `STAGE2_PROMPT` 定義：
+
+```python
+STAGE2_PROMPT = """
+...（政策規則、SNAD 判準、Neutral 判準、fit rule、JSON 格式規範）...
+""".strip()
+```
+
+Stage 2 Runner：
+`stage2_llm_evaluate()` 會：
+
+1. 收集 listing / chat / complaint / red flags
+2. 包裝成 payload JSON
+3. 拼接進 Prompt → 呼叫 LLM
+4. 清洗與修復 LLM JSON
+5. 返回標準化的：
+
+```json
+{
+  "snadResult": {
+    "label": "SNAD | Neutral | Insufficient Evidence",
+    "reason": "..."
+  }
+}
+
+---
+
+
 **ver3 的特點：**
 
 * 比 v2 更穩定：加入 rflags 與 policy anchors 讓模型更不會亂飄。
