@@ -26,23 +26,153 @@
 不採用 RAG，因為案件文本量小，直接置入 prompt 最穩定且可控。
 
 ---
+下面是 **你要求的「ver3 版本的系統特色（系統架構敘述）」**，用在 README.md 的 **🧠 系統特色** 區塊 —— 完全符合你最後採用的 **v3 模組化版本**（extractor.py、rflags.py、policy.py、llm_stage2.py、postprocess.py、outcome_ai.py、summary.py、build.py、arbitration_pipeline.py）。
 
-## 🧠 系統特色
+---
 
-### ✔ **一套明確的三階段 Pipeline**
+# 🧠 系統特色（ver3 最終版架構）
 
-1. **Stage 1 — Extractor**
-   解析並整理 listing、chat history、metadata。
+✔ **全面模組化的三階段 Pipeline（ver3 最終採用）**
+v3 強調 **模組拆分、可維護性、可測試性與可擴充性**，每個模組負責單一核心功能，避免 v2 的單檔過度耦合問題。
 
-2. **Stage 2 — SNAD Decision Engine（ver2 最終採用）**
-   使用嚴格政策導向 prompt，產生：
+---
 
-   * SNAD / Neutral / Insufficient Evidence
-   * reason（SNAD only）
-   * policy anchors
+## **Stage 1 — Extract & Normalize（資料抽取與規範化）**
 
-3. **Stage 3 — Formatter**
-   僅格式化，不修改 LLM 的判定。
+負責將原始 JSON 中的所有資訊拆解、規整成統一格式，包含：
+
+* **listing 資訊解析**（標題、描述、品項狀況、配件、瑕疵）
+* **chat history 解析**（買賣雙方對話的事件序列）
+* **timeline metadata 抽取**（下單、取件、開箱時間等）
+* **重點字段正規化**（例如：缺件、尺寸、狀況描述）
+
+➡ 實作檔案：`extractor.py`
+
+輸出：**結構化的 extracted_case dict**，供後續 Stage 2 使用。
+
+---
+
+## **Stage 2 — Policy-Driven SNAD Decision Engine（政策導向 SNAD 判定）**
+
+此階段是 v3 的 **核心邏輯**，由多個模組共同完成：
+
+### 🔸 rflags.py — Red Flags 偵測器
+
+* 自動判斷案件中是否存在「明顯爭議點」
+  例如：
+
+  * 尺寸不符
+  * 與描述不符
+  * 缺件
+  * 瑕疵未披露
+  * 價格與價值落差
+* Red Flags 會送入 prompt 作為 LLM 的 contextual facts。
+
+---
+
+### 🔸 policy.py — 政策 Rule Loader + Anchor Selector
+
+* 載入 **Carousell SNAD 政策**
+* 依據案例內容，自動挑選可能適用的政策 anchor（如 SND-501 / EVD-701 等）
+* 提供至 Stage 2 prompt，讓 LLM 參考並引用。
+
+---
+
+### 🔸 llm_stage2.py — SNAD / Neutral / IE 最終決策
+
+使用 **嚴格政策導向 Prompt（ver3 最終版）**
+輸出格式固定為：
+
+```json
+{
+  "snadResult": {
+    "label": "SNAD" | "Neutral" | "Insufficient Evidence",
+    "reason": "One-line English reason explaining the decision."
+  }
+}
+```
+
+**ver3 的特點：**
+
+* 比 v2 更穩定：加入 rflags 與 policy anchors 讓模型更不會亂飄。
+* 明確要求：
+
+  * **SNAD 必須寫 reason（要有實體 discrepancy）**
+  * Neutral 與 IE **不得亂寫 reason**
+* 正式使用 `clean_json_output()` 確保一定能 parse 成 JSON。
+
+---
+
+## **Stage 3 — Post-Process, Recommendation, Summary（格式化與補充）**
+
+Stage 3 **僅格式化，不修改 LLM 判定內容**（符合你 v3 的要求）
+
+包含三個模組：
+
+### 🔸 postprocess.py
+
+* 將 llm raw output 清洗成合法 JSON
+* 移除模型亂加的說明文字
+* 處理 JSON 斷裂、缺逗號等情況
+
+---
+
+### 🔸 outcome_ai.py
+
+* 根據 Stage 2 label，自動生成建議方案：
+
+  * **SNAD → 應提供 Return & Refund / Partial Refund**
+  * **Neutral → 多為雙方無過錯，提供 Partial Refund 建議**
+  * **Insufficient Evidence → 建議雙方協商或維持原狀**
+
+---
+
+### 🔸 summary.py
+
+* 將整案整理成「可讀的 Case Summary」
+* 包含：
+
+  * 關鍵事件線
+  * Red Flags
+  * 判定摘要
+  * 建議處置方案
+
+---
+
+## **Stage Builder — build.py**
+
+集成所有模組，負責組合完整 Pipeline 的執行順序：
+
+1. Extractor
+2. RFlags
+3. Policy Loader
+4. Stage2 Decision
+5. Post-process
+6. Outcome Recommendation
+7. Summary
+
+---
+
+## **arbitration_pipeline.py — 主入口**
+
+v3 的統一入口（取代 v2 的單檔 pipeline），負責：
+
+* loading case
+* 執行 build pipeline
+* 回傳完整 analysis JSON 結果
+
+---
+
+# ✅ v3 的整體優勢
+
+| 項目          | v2 舊版本          | v3 新版本（最終採用）                         |
+| ----------- | --------------- | ------------------------------------ |
+| 模組化         | ❌ 單一大檔，難維護      | ✔ 完整拆分，易 debug、易擴充                   |
+| 再現性         | ❌ 模型輸出容易飄       | ✔ 有 rflags + policy anchors，穩定許多     |
+| JSON 可靠度    | ❌ 常壞掉           | ✔ clean_json_output + coerce_to_json |
+| Prompt 控制力  | 中等              | ✔ 強 prompt + 明確格式規範                  |
+| 便於前端串接      | 普通              | ✔ 統一結構，前端只需讀一種格式                     |
+| 是否改動 LLM 判斷 | ❌ 有時 Stage3 會覆蓋 | ✔ 完全不碰 LLM label                     |
 
 ---
 
