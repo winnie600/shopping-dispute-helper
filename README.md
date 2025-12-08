@@ -135,7 +135,7 @@ ollama pull gemma3:1b
 ollama serve
 ```
 
-### 4️⃣ 啟動後端
+### 4️⃣ 啟動後端(目前版本無嵌入前端 忽略此項目)
 
 ```bash
 uvicorn app.main:app --reload
