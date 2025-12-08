@@ -1,4 +1,4 @@
-# src/pipeline/stage2_llm.py
+# src/pipeline/stage2_llm.py  加在哪裡 
 # ----------------------------------------
 # Stage 2 — LLM SNAD / Neutral / Insufficient Evidence Classification
 # ----------------------------------------
@@ -28,20 +28,20 @@ Follow the policy rules STRICTLY. If the facts do not show a clear SNAD breach, 
 Use ONLY the allowed policy codes provided.
 
 [POLICY RULES — STRICT]
-SNAD :
+SNAD (SND-501):
 - Seller provided incorrect key information (e.g., wrong size label, wrong model, undisclosed repairs, undisclosed major defects, missing guaranteed accessories).
 - Must involve an **objective, material mismatch** between listing → delivered item.
 
-Neutral:
+Neutral(SND-502):
 - Subjective dissatisfaction or non-material differences (e.g., comfort, fit, expectations, minor wear, normal product variation).
 - Applies whenever the seller’s information is accurate and no material mismatch exists.
 
-Insufficient Evidence:
+Insufficient Evidence(SND-503):
 - Buyer claims an issue but provides no objective evidence of mismatch.
 
 [IMPORTANT FIT RULE — OVERRIDES ALL]
 Issues about "fit", "snugness", "tightness", "runs small", "comfort", or “feels like a smaller size” DO NOT count as SNAD.
-Always Neutral unless the SIZE LABEL itself is wrong.
+These are product characteristics or subjective sensations → ALWAYS classify as **Neutral (SND-502)** unless the **SIZE LABEL itself is incorrect**.
 
 Examples:
 - Buyer says “fits like 8.5” but box/listing show “US9” → Neutral.
@@ -75,6 +75,8 @@ If any is missing → must be Neutral(SND-502).
 - Do NOT invent mismatches.
 - If no material mismatch → reason supports Neutral.
 - If evidence incomplete → Insufficient Evidence.
+
+
 
 Respond ONLY with the JSON above.
 """.strip()
@@ -136,10 +138,17 @@ def stage2_llm_evaluate(
     # -------------------------------
     raw = llm.invoke(prompt)
 
+    # DEBUG: print raw LLM output
+    print("\n================ RAW LLM OUTPUT ================\n")
+    print(raw)
+    print("\n================================================\n")
+
+
     # Debug dump
     if debug_dump_dir and case_id:
         debug_dump_dir.mkdir(exist_ok=True, parents=True)
         (debug_dump_dir / f"{case_id}_stage2_raw.txt").write_text(raw, encoding="utf-8")
+
 
     # -------------------------------
     # Try parsing JSON
