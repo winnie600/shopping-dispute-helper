@@ -187,7 +187,7 @@ dispute_pipeline_v3/
 執行：
 
 ```bash
-python src\arbitration_pipeline.py --case-id case1 --data-dir .\data\source --out-dir .\data\analysis --model gemma3:1b --verbose
+python src\arbitration_pipeline.py --case-id case1 --data-dir .\data\source --out-dir .\data\analysis --model gemma3:1b
 ```
 
 將輸出case1的：
@@ -215,18 +215,15 @@ python src\arbitration_pipeline.py --case-id case1 --data-dir .\data\source --ou
 
 ## ✔ 已完成進度（期末）
 
-* ver2 SNAD Pipeline（最終版）
+* ver3 SNAD Pipeline（最終版）
 * Case1/Case2/Case3 均可穩定跑完
 * 政策引用完善
 * JSON 結構一致
-* Neutral 不再誤判 SNAD
 * 取消 RAG，prompt 完全可控
-* main.py + run_pipeline.py 可直接執行
 
 ---
 
 ## ❗ 遇到的問題（已解決）
-
 
 ### 1. JSON reason 欄位空白
 
@@ -242,7 +239,9 @@ python src\arbitration_pipeline.py --case-id case1 --data-dir .\data\source --ou
 ### 1. Case2 被判成 SNAD
 → fit/snugness 一律視為主觀 → Neutral。
 仍無法判斷正確，可能為模型太小，語意判斷較弱。
-
+### 2. Case3 Prompt 產出忽略 netural的reason
+解法：prompt 加入明確規則
+解法2：讓netural有預設的reason至少不會產出空
 ---
 
 ## UI設計
@@ -340,7 +339,7 @@ SNAD 對照：是／否 — 理由：____
 已提出建議：A/B＋錨點：____
 時間線：開啟爭議、24h 截止、是否已自動升級：____
 
-
+---
 
 ## 🔮 未來規劃
 
