@@ -240,8 +240,7 @@ python src\arbitration_pipeline.py --case-id case1 --data-dir .\data\source --ou
 → fit/snugness 一律視為主觀 → Neutral。
 仍無法判斷正確，可能為模型太小，語意判斷較弱。
 ### 2. Case3 Prompt 產出忽略 netural的reason
-解法：prompt 加入明確規則
-解法2：讓netural有預設的reason至少不會產出空
+→ 解法1.prompt 加入明確規則 解法2.讓netural有預設的reason至少不會產出空。
 ---
 
 ## UI設計
