@@ -156,10 +156,10 @@ uvicorn app.main:app --reload
 執行：
 
 ```bash
-python run_pipeline.py case2
+python src\arbitration_pipeline.py --case-id case1 --data-dir .\data\source --out-dir .\data\analysis --model gemma3:1b --verbose
 ```
 
-將輸出：
+將輸出case1的：
 
 * eligibility 判定
 * SNAD/Neutral/IE
