@@ -1,0 +1,70 @@
+{
+  "id": "case6",
+  "title": "Beige Hoodie — Color discrepancy",
+  "transactionMethod": "7-11 COD",
+  "disputeOpenedAfterHours": 18,
+  "orderCompleted": false,
+
+  "listingInfo": {
+    "title": "寬鬆版 Beige 連帽帽T",
+    "listedPrice": "NT$480",
+    "condition": "9/10",
+    "disclosedFlaws": "None; seller said photos were phone-taken.",
+    "attributes": "Cotton fleece, mid-thickness, worn 3–4 times, machine washable, Uniqlo purchase.",
+    "photos": [
+      { "url": "/images/case6/photo1.jpg", "label": "bright indoor photo" },
+      { "url": "/images/case6/photo2.jpg", "label": "window lighting photo" }
+    ]
+  },
+
+  "orderMeta": [
+    { "label": "Order ID", "value": "TW-15011" },
+    { "label": "Order Created", "value": "2025-09-28 14:40" },
+    { "label": "Seller Shipped", "value": "2025-09-28 19:05" },
+    { "label": "Arrived at Store", "value": "2025-09-29 14:32" },
+    { "label": "Buyer Picked Up", "value": "2025-09-29 19:10" },
+    { "label": "Dispute Opened", "value": "2025-09-30 09:10" }
+  ],
+
+  "complaint": "Buyer reports the actual hoodie color is significantly darker than shown in seller's bright-window photos. Seller unintentionally caused misleading images due to strong natural lighting. Classified as SNAD (SND-501 Misleading Image).",
+
+  "chatLog": [
+    { "timestamp": "2025-09-28 14:20", "sender": "Buyer", "text": "哈囉～帽T還在嗎？" },
+    { "timestamp": "2025-09-28 14:21", "sender": "Seller", "text": "在喔。" },
+
+    { "timestamp": "2025-09-28 14:22", "sender": "Buyer", "text": "材質是棉絨嗎？穿起來會厚嗎？" },
+    { "timestamp": "2025-09-28 14:23", "sender": "Seller", "text": "算中厚度，棉絨的，蠻舒服的。" },
+
+    { "timestamp": "2025-09-28 14:24", "sender": "Buyer", "text": "你大概穿幾次了？會起毛球嗎？" },
+    { "timestamp": "2025-09-28 14:25", "sender": "Seller", "text": "大概 3、4 次吧，目前沒有起球。" },
+
+    { "timestamp": "2025-09-28 14:26", "sender": "Buyer", "text": "在哪裡買的？" },
+    { "timestamp": "2025-09-28 14:27", "sender": "Seller", "text": "Uniqlo 台灣買的。" },
+
+    { "timestamp": "2025-09-28 14:28", "sender": "Buyer", "text": "洗衣有需要特別注意嗎？會褪色嗎？" },
+    { "timestamp": "2025-09-28 14:30", "sender": "Seller", "text": "我都丟洗衣機，也沒褪色過。" },
+
+    { "timestamp": "2025-09-28 14:31", "sender": "Buyer", "text": "那我買了～麻煩寄到 7-11 Minquan East。" },
+    { "timestamp": "2025-09-28 14:32", "sender": "Seller", "text": "OK，我下午寄。" },
+
+    { "timestamp": "2025-09-28 14:40", "sender": "System", "text": "訂單成立 – Order ID：TW-15011" },
+    { "timestamp": "2025-09-28 19:05", "sender": "Seller", "text": "已寄出。" },
+    { "timestamp": "2025-09-29 14:32", "sender": "System", "text": "包裹已抵達門市。" },
+    { "timestamp": "2025-09-29 19:10", "sender": "Buyer", "text": "已取件～" },
+
+    { "timestamp": "2025-09-30 09:10", "sender": "Buyer", "text": "我收到衣服了。但顏色跟照片差蠻多的。照片看起來是亮米色，實物比較接近深黃／褐色。（附上兩張自然光實拍）" },
+
+    { "timestamp": "2025-09-30 09:16", "sender": "Seller", "text": "咦？為什麼差這麼多？可能我拍的時候靠窗，光線太強，但我真的沒有調色，是手機自己把亮度拉高。" },
+
+    { "timestamp": "2025-09-30 09:18", "sender": "Buyer", "text": "嗯，我也知道你不是故意的。但我本來是想買亮米色，實物顏色真的不同。" },
+
+    { "timestamp": "2025-09-30 09:22", "sender": "Seller", "text": "看你拍的照片，確實深滿多的。不好意思，我真的沒注意到光線會影響那麼大。" },
+
+    { "timestamp": "2025-09-30 09:24", "sender": "Buyer", "text": "所以我這邊想申請退貨。" },
+
+    { "timestamp": "2025-09-30 09:28", "sender": "Seller", "text": "好…，我讓系統判斷看看。" },
+
+    { "timestamp": "2025-09-30 09:29", "sender": "System", "text": "Buyer 送出退貨申請。" },
+    { "timestamp": "2025-09-30 09:41", "sender": "System", "text": "Seller 拒絕退貨 → 交由 AI 判斷。" }
+  ]
+}

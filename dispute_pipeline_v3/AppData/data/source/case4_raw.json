@@ -1,0 +1,73 @@
+{
+  "id": "case4",
+  "title": "Philips HR2221 果汁機",
+  "transactionMethod": "7-11 COD",
+  "disputeOpenedAfterHours": 12,
+  "orderCompleted": false,
+
+  "listingInfo": {
+    "title": "Philips HR2221 – 果汁機，運作正常，配件完整",
+    "listedPrice": "NT$850",
+    "condition": "Used (8/10)",
+    "disclosedFlaws": "None",
+    "attributes": "Main unit + cup + lid + blade; blends fruits and small ice; cup clean in photos.",
+    "photos": [
+      { "url": "/images/case4/full.jpg", "label": "full product" },
+      { "url": "/images/case4/cup1.jpg", "label": "cup photo 1" },
+      { "url": "/images/case4/cup2.jpg", "label": "cup photo 2" },
+      { "url": "/images/case4/accessories.jpg", "label": "accessories" }
+    ]
+  },
+
+  "orderMeta": [
+    { "label": "Order ID", "value": "TW-13058" },
+    { "label": "Order Created", "value": "2025-11-12 14:45" },
+    { "label": "Seller Shipped", "value": "2025-11-12 18:10" },
+    { "label": "Arrived at Store", "value": "2025-11-13 16:20" },
+    { "label": "Buyer Picked Up", "value": "2025-11-13 20:45" },
+    { "label": "Dispute Opened", "value": "2025-11-14 09:06" }
+  ],
+
+  "complaint": "Buyer claims the blender cup arrived cracked. Seller provided pre-shipment photos showing no cracks. No packaging or unboxing video from either side. Cannot determine when damage occurred (likely logistic damage but unprovable). Not SNAD — Neutral Damage.",
+
+  "chatLog": [
+    { "timestamp": "2025-11-12 13:58", "sender": "Buyer", "text": "你好，請問機器還在嗎？我想找一台小的先用用看。" },
+    { "timestamp": "2025-11-12 14:01", "sender": "Seller", "text": "在喔，我用不多，搬家所以賣掉。" },
+
+    { "timestamp": "2025-11-12 14:03", "sender": "Buyer", "text": "這台打得動嗎？我主要打水果，偶爾加點小冰塊。" },
+    { "timestamp": "2025-11-12 14:06", "sender": "Seller", "text": "OK 的，水果很順，小冰塊也可以。我用起來都很穩定。" },
+
+    { "timestamp": "2025-11-12 14:07", "sender": "Buyer", "text": "杯身還算乾淨嗎？我比較怕那種刮太多的。" },
+    { "timestamp": "2025-11-12 14:10", "sender": "Seller", "text": "有一點使用痕跡，但整體算乾淨。我拍給你看。" },
+    { "timestamp": "2025-11-12 14:12", "sender": "Seller", "text": "(寄出杯身照片 ×2)" },
+
+    { "timestamp": "2025-11-12 14:15", "sender": "Buyer", "text": "OK，這樣可以。配件都還在吧？" },
+    { "timestamp": "2025-11-12 14:17", "sender": "Seller", "text": "都在喔。" },
+
+    { "timestamp": "2025-11-12 14:22", "sender": "Buyer", "text": "可以 800 賣我嗎？" },
+    { "timestamp": "2025-11-12 14:23", "sender": "Seller", "text": "可以，800 給你。" },
+
+    { "timestamp": "2025-11-12 14:24", "sender": "Buyer", "text": "那寄 7-11 取貨付款到 Zhonghua 店，謝謝。" },
+    { "timestamp": "2025-11-12 14:25", "sender": "Seller", "text": "沒問題，運費 60 到店付款。" },
+    { "timestamp": "2025-11-12 14:27", "sender": "Seller", "text": "我下午寄出。" },
+
+    { "timestamp": "2025-11-12 14:45", "sender": "System", "text": "訂單已建立 — Order ID: TW-13058" },
+    { "timestamp": "2025-11-12 18:10", "sender": "Seller", "text": "已寄出。" },
+    { "timestamp": "2025-11-13 16:20", "sender": "System", "text": "包裹已抵達門市。" },
+    { "timestamp": "2025-11-13 20:45", "sender": "Buyer", "text": "我取件並付款 NT$860。" },
+
+    { "timestamp": "2025-11-14 08:25", "sender": "Buyer", "text": "我收到貨了。剛洗杯身時發現側邊有一道裂痕，這樣我完全沒辦法使用。" },
+    { "timestamp": "2025-11-14 08:32", "sender": "Seller", "text": "真的嗎？我找一下我寄出前拍的照片。我寄的時候絕對沒有裂。" },
+    { "timestamp": "2025-11-14 08:37", "sender": "Seller", "text": "(寄出寄件前照片——杯身完好)" },
+    { "timestamp": "2025-11-14 08:40", "sender": "Buyer", "text": "照片裡是沒裂，沒錯。可是我收到就是裂的，我也不知道什麼時候發生的。總之我現在不敢用了。" },
+
+    { "timestamp": "2025-11-14 08:45", "sender": "Seller", "text": "我覺得可能是運送造成的。你看外箱有沒有凹陷？" },
+    { "timestamp": "2025-11-14 08:48", "sender": "Buyer", "text": "外箱正常。但我收到的就是壞的，所以我想要退貨。" },
+
+    { "timestamp": "2025-11-14 08:52", "sender": "Seller", "text": "全額退款我有點為難，因為我有證據商品寄出時是完好的。我覺得這不是我的問題。" },
+    { "timestamp": "2025-11-14 08:58", "sender": "Buyer", "text": "可是我這樣完全不能用啊…" },
+
+    { "timestamp": "2025-11-14 09:04", "sender": "Buyer", "text": "我剛剛在 App 按下退貨申請了。你注意一下系統通知。" },
+    { "timestamp": "2025-11-14 09:06", "sender": "Seller", "text": "……好吧，看系統怎麼處理。" }
+  ]
+}

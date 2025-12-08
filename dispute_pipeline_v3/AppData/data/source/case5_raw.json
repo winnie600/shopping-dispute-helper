@@ -1,0 +1,66 @@
+{
+  "id": "case5",
+  "title": "Nintendo Switch — Buyer changed mind",
+  "transactionMethod": "7-11 COD",
+  "disputeOpenedAfterHours": 16,
+  "orderCompleted": false,
+
+  "listingInfo": {
+    "title": "Nintendo Switch（一般版）– 運作順暢，配件完整",
+    "listedPrice": "NT$4,500",
+    "condition": "Used (8.5/10)",
+    "disclosedFlaws": "None; seller states fully functional.",
+    "attributes": "Main console, JoyCon, Dock, charging cable; no repairs; screen normal; JoyCon no drift.",
+    "photos": [
+      { "url": "/images/case5/main.jpg", "label": "console + JoyCon" },
+      { "url": "/images/case5/screen.jpg", "label": "screen on" },
+      { "url": "/images/case5/dock.jpg", "label": "dock + cables" },
+      { "url": "/images/case5/all.jpg", "label": "full set" }
+    ]
+  },
+
+  "orderMeta": [
+    { "label": "Order ID", "value": "TW-14012" },
+    { "label": "Order Created", "value": "2025-10-20 11:35" },
+    { "label": "Seller Shipped", "value": "2025-10-20 17:50" },
+    { "label": "Arrived at Store", "value": "2025-10-21 13:10" },
+    { "label": "Buyer Picked Up", "value": "2025-10-21 19:05" },
+    { "label": "Dispute Opened", "value": "2025-10-22 11:13" }
+  ],
+
+  "complaint": "Buyer says item is fully functional but they 'don’t like it / not used to it' and requests a return. This is Buyer’s Change of Mind — not SNAD.",
+
+  "chatLog": [
+    { "timestamp": "2025-10-20 11:12", "sender": "Buyer", "text": "嗨～主機還在嗎？" },
+    { "timestamp": "2025-10-20 11:14", "sender": "Seller", "text": "在喔。" },
+
+    { "timestamp": "2025-10-20 11:16", "sender": "Buyer", "text": "你用起來順嗎？我想買來看看自己習不習慣。" },
+    { "timestamp": "2025-10-20 11:20", "sender": "Seller", "text": "蠻順的，我玩 Zelda、Mario 都沒問題。" },
+
+    { "timestamp": "2025-10-20 11:22", "sender": "Buyer", "text": "Joycon 會漂移嗎？之前聽說很多都會。" },
+    { "timestamp": "2025-10-20 11:24", "sender": "Seller", "text": "這支不會喔，我剛保養過。" },
+
+    { "timestamp": "2025-10-20 11:26", "sender": "Buyer", "text": "4,300 可以嗎？" },
+    { "timestamp": "2025-10-20 11:27", "sender": "Seller", "text": "4,400 給你。" },
+
+    { "timestamp": "2025-10-20 11:29", "sender": "Buyer", "text": "OK。7-11 取貨付款，寄到 Zhongxiao Xinsheng。" },
+    { "timestamp": "2025-10-20 11:30", "sender": "Seller", "text": "好，我下午寄出。" },
+
+    { "timestamp": "2025-10-20 11:35", "sender": "System", "text": "訂單已建立 – Order ID：TW-14012" },
+    { "timestamp": "2025-10-20 17:50", "sender": "Seller", "text": "已寄出。" },
+    { "timestamp": "2025-10-21 13:10", "sender": "System", "text": "包裹已抵達門市。" },
+    { "timestamp": "2025-10-21 19:05", "sender": "Buyer", "text": "我取件並付款 NT$4,060。" },
+
+    { "timestamp": "2025-10-22 10:42", "sender": "Buyer", "text": "我收到主機了。功能都正常，沒有問題。但…玩了一下覺得好像不是我想像的那種玩法，有點不太習慣。可以讓我退貨嗎？" },
+
+    { "timestamp": "2025-10-22 10:50", "sender": "Seller", "text": "只要沒有故障，我就不能接受因為“不適合”而退貨喔。電子產品退回很麻煩也有風險，我在刊登時也寫了「不接受因個人喜好改變而退貨」。" },
+
+    { "timestamp": "2025-10-22 10:54", "sender": "Buyer", "text": "了解…只是我真的玩不太慣。" },
+
+    { "timestamp": "2025-10-22 10:57", "sender": "Seller", "text": "我完全理解，但既然沒有任何問題，要退的話就是我全部吃虧，所以我真的不能收回。" },
+
+    { "timestamp": "2025-10-22 11:13", "sender": "System", "text": "Buyer 已提交退貨／退款申請。理由：「不符合需求／用不習慣」" },
+
+    { "timestamp": "2025-10-22 11:20", "sender": "Seller", "text": "賣家選擇「拒絕退貨」。理由：「非 SNAD／買家改變心意」。" }
+  ]
+}
