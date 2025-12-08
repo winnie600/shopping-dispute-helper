@@ -17,9 +17,7 @@
 
 ## Build Setup (Local)
 
-好的！以下是 **完全依照你現在的專案（後端 Only、ver2 Pipeline、無前端整合、無 RAG、FastAPI + Ollama）** 所量身打造的 **README.md**。
 
-你可以直接複製貼到 GitHub 使用。
 
 ---
 
