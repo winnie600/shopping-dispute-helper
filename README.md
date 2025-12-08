@@ -26,9 +26,6 @@
 不採用 RAG，因為案件文本量小，直接置入 prompt 最穩定且可控。
 
 ---
-下面是 **你要求的「ver3 版本的系統特色（系統架構敘述）」**，用在 README.md 的 **🧠 系統特色** 區塊 —— 完全符合你最後採用的 **v3 模組化版本**（extractor.py、rflags.py、policy.py、llm_stage2.py、postprocess.py、outcome_ai.py、summary.py、build.py、arbitration_pipeline.py）。
-
----
 
 # 🧠 系統特色（ver3 最終版架構）
 
