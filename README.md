@@ -200,17 +200,20 @@ python src\arbitration_pipeline.py --case-id case1 --data-dir .\data\source --ou
 
 → 回到 ver2，一次 prompt 產生所有內容。
 
-### 2. Case2 被判成 SNAD
-
-→ fit/snugness 一律視為主觀 → Neutral。
-
-### 3. JSON reason 欄位空白
+### 2. JSON reason 欄位空白
 
 → Neutral 不需 reason → 由 prompt 修正。
 
-### 4. RAG chunk 錯誤
+### 3. RAG chunk 錯誤
 
 → 文本量太小，不適合 RAG → 改 direct prompt。
+
+---
+
+## ❗ 遇到的問題（未解決）
+### 1. Case2 被判成 SNAD
+→ fit/snugness 一律視為主觀 → Neutral。
+仍無法判斷正確，可能為模型太小，語意判斷較弱。
 
 ---
 
