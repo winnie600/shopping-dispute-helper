@@ -1,0 +1,38 @@
+{
+  "eligibility": {
+    "r1": true,
+    "r2": true,
+    "r3": true,
+    "notes": "In-app + 7-ELEVEN COD; opened ~62h after pickup; Order is not yet completed",
+    "policyAnchors": [
+      "ELI-301",
+      "ELI-302",
+      "ELI-303"
+    ]
+  },
+  "snadResult": {
+    "label": "Neutral",
+    "policyAnchors": [
+      "SND-502"
+    ]
+  },
+  "recommendation": {
+    "primaryOption": {
+      "label": "Partial Refund & Keep Item",
+      "details": "Buyer keeps the item; offer 15–30% partial refund.",
+      "policyAnchors": [
+        "OUT-802",
+        "FEE-C"
+      ]
+    },
+    "alternativeOption": {
+      "label": "Return & Full Refund",
+      "details": "Buyer covers NT$60 shipping.",
+      "policyAnchors": [
+        "OUT-801",
+        "FEE-B"
+      ]
+    }
+  },
+  "caseSummary": "Order: TW-11021\nEligibility: R1/R2/R3 ✅\nKey: \nDecision: Neutral\nOutcome: The dispute was resolved with both parties mutually agreeing to a partial refund of NT$500."
+}

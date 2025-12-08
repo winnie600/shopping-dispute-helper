@@ -1,0 +1,39 @@
+{
+  "eligibility": {
+    "r1": true,
+    "r2": true,
+    "r3": true,
+    "notes": "In-app + 7-ELEVEN COD; opened ~14h after pickup; Order is not yet completed",
+    "policyAnchors": [
+      "ELI-301",
+      "ELI-302",
+      "ELI-303"
+    ]
+  },
+  "snadResult": {
+    "label": "Neutral",
+    "reason": "The seller provided the headphones in a state where the listing doesn’t explicitly state the inclusion of the USB-C cable. The user’s complaint focuses on a missing element that isn’t a material mismatch, but a difference in the listing versus the delivered item. The description of the listing focuses on the headphone’s color and functionality, not its accessory. There’s no clear indication of a material mismatch or a conflict between the listing and the delivered item.",
+    "policyAnchors": [
+      "SND-502"
+    ]
+  },
+  "recommendation": {
+    "primaryOption": {
+      "label": "Partial Refund & Keep Item",
+      "details": "Buyer keeps the item; offer 15–30% partial refund.",
+      "policyAnchors": [
+        "OUT-802",
+        "FEE-C"
+      ]
+    },
+    "alternativeOption": {
+      "label": "Return & Full Refund",
+      "details": "Buyer covers NT$60 shipping.",
+      "policyAnchors": [
+        "OUT-801",
+        "FEE-B"
+      ]
+    }
+  },
+  "caseSummary": "Order: TW-12033\nEligibility: R1/R2/R3 ✅\nKey: The seller provided the headphones in a state where the listing doesn’t explicitly state the inclusion of the USB-C cable. The user’s complaint focuses on a missing element that isn’t a material mismatch, but a difference in the listing versus the delivered item. The description of the listing focuses on the headphone’s color and functionality, not its accessory. There’s no clear indication of a material mismatch or a conflict between the listing and the delivered item.\nDecision: Neutral\nOutcome: The dispute was settled with a partial refund of 300 TWD to the buyer."
+}

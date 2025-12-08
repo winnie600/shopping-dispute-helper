@@ -1,0 +1,2 @@
+langchain-ollama
+typing-extensions>=4.6
