@@ -12,13 +12,6 @@
 前端:  
 後端: langchain-ollama typing-extensions>=4.6
 
-
-## System architecture
-
-## Build Setup (Local)
-
-
-
 ---
 
 ## 🔍 專案簡介
