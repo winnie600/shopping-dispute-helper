@@ -162,7 +162,29 @@ uvicorn app.main:app --reload
 ## 📂 專案結構
 
 ```
-
+dispute_pipeline_v3/
+│
+├── README.md
+├── requirements.txt
+│
+├── src/
+│   ├── __init__.py
+│   ├── pipeline/
+│   │     ├── __init__.py
+│   │     ├── extractor.py
+│   │     ├── rflags.py
+│   │     ├── llm_stage2.py
+│   │     ├── postprocess.py
+│   │     ├── policy.py
+│   │     ├── outcome_ai.py
+│   │     ├── summary.py
+│   │     └── build.py  ← 把所有模組串在一起
+│   │
+│   └── arbitration_pipeline.py   ← 主入口（控制資料流、決定順序）
+│
+└── data/
+    ├── source/     ← 放 case1_raw.json, case2_raw.json ...（原始輸入）
+    └── analysis/   ← LLM 輸出結果
 ```
 
 ---
