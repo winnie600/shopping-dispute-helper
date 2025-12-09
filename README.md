@@ -447,11 +447,12 @@ python src\arbitration_pipeline.py --case-id case1 --data-dir .\data\source --ou
 ---
 
 ## UI設計
-![image](https://github.com/winnie600/shopping-dispute-helper/blob/main/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-12-09%20023157.png)
-![image](https://github.com/winnie600/shopping-dispute-helper/blob/main/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-12-09%20023218.png)
-![image](https://github.com/winnie600/shopping-dispute-helper/blob/main/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-12-09%20023238.png)
-![image](https://github.com/winnie600/shopping-dispute-helper/blob/main/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-12-09%20023300.png)
-![image](https://github.com/winnie600/shopping-dispute-helper/blob/main/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-12-09%20023317.png)
+![image](https://github.com/winnie600/shopping-dispute-helper/blob/main/UI_photo_ver2/messageImage_1765252811370.jpg)
+![image](https://github.com/winnie600/shopping-dispute-helper/blob/main/UI_photo_ver2/messageImage_1765252857348.jpg)
+![image](https://github.com/winnie600/shopping-dispute-helper/blob/main/UI_photo_ver2/messageImage_1765252869133.jpg)
+![image](https://github.com/winnie600/shopping-dispute-helper/blob/main/UI_photo_ver2/messageImage_1765252892722.jpg)
+![image](https://github.com/winnie600/shopping-dispute-helper/blob/main/UI_photo_ver2/messageImage_1765252906611.jpg)
+
 
 ---
 ## 政策範例
