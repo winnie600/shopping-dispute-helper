@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Vì sao cần: tiện style nhanh cho demo */
+:root { color-scheme: light dark; }
+.prose-block { @apply whitespace-pre-wrap leading-relaxed text-sm; }
+.card { @apply rounded-2xl border border-gray-200/70 shadow-sm bg-white; }
+.badge { @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium; }
