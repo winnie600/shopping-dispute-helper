@@ -1,6 +1,6 @@
 
 
-# 📁 **dispute_pipeline_v3 專案結構（最終版）**
+# 📁 **dispute_pipeline_v3.1 專案結構（前端嵌入版）**
 
 ```
 dispute_pipeline_v3/
@@ -194,6 +194,7 @@ src/pipeline/
 - All outputs strictly follow SNAD policy rules and consistent JSON schema.
 
 ```
+
 
 
 
