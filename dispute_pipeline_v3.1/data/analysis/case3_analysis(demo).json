@@ -1,0 +1,24 @@
+{
+  "eligibility": {
+    "r1": true,
+    "r2": true,
+    "r3": true,
+    "notes": "Reported within window."
+  },
+  "snadResult": {
+    "label": "Neutral",
+    "reason": "Accessories not guaranteed; no “complete set” claim.",
+    "policyAnchors": ["ELI-301", "SND-502"]
+  },
+  "recommendation": {
+    "primaryOption": {
+      "label": "Partial Refund",
+      "details": "5–10% (NT$200–400) goodwill."
+    },
+    "alternativeOption": {
+      "label": "Return & Full Refund",
+      "details": "Buyer covers NT$60 shipping (no fault)."
+    }
+  },
+  "caseSummary": "Order: TW-12033\nEligibility: R1/R2/R3 ✅\nDecision: Neutral (ambiguous expectation)\nOutcome: Partial refund NT$300"
+}

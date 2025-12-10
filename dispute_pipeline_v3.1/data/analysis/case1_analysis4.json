@@ -1,0 +1,39 @@
+{
+  "eligibility": {
+    "r1": true,
+    "r2": true,
+    "r3": true,
+    "notes": "In-app + 7-ELEVEN COD; opened ~15h after pickup; Order is not yet completed",
+    "policyAnchors": [
+      "ELI-301",
+      "ELI-302",
+      "ELI-303"
+    ]
+  },
+  "snadResult": {
+    "label": "SNAD",
+    "reason": "!!The seller did not disclose the screen replacement, which is a material fact that affects the item's value and condition.",
+    "policyAnchors": [
+      "SND-501"
+    ]
+  },
+  "recommendation": {
+    "primaryOption": {
+      "label": "Return & Full Refund",
+      "details": " Seller reimburses NT$60 COD shipping and provides a return label.",
+      "policyAnchors": [
+        "OUT-801",
+        "FEE-A"
+      ]
+    },
+    "alternativeOption": {
+      "label": "Partial Refund & Keep Item",
+      "details": "Buyer keeps the item; offer 15–30% partial refund.",
+      "policyAnchors": [
+        "OUT-802",
+        "FEE-C"
+      ]
+    }
+  },
+  "caseSummary": "Order: TW-10567\nEligibility: R1/R2/R3 ✅\nKey: The seller did not disclose the screen replacement, which is a material fact that affects the item's value and condition.\nDecision: SNAD\nOutcome: The dispute concluded with the Seller issuing a full refund and the Buyer retaining the item."
+}

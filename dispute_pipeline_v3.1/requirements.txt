@@ -1,0 +1,5 @@
+langchain-ollama
+typing-extensions>=4.6
+python-dotenv
+openai
+fastapi uvicorn

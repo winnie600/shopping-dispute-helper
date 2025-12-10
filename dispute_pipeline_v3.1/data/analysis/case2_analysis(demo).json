@@ -1,0 +1,24 @@
+{
+  "eligibility": {
+    "r1": true,
+    "r2": true,
+    "r3": true,
+    "notes": "???Within 24h; protected channel."
+  },
+  "snadResult": {
+    "label": "Neutral",
+    "reason": "Model runs 0.5 size smaller by design.",
+    "policyAnchors": ["ELI-301", "SND-502"]
+  },
+  "recommendation": {
+    "primaryOption": {
+      "label": "Partial Refund",
+      "details": "≈10% goodwill (NT$400–600) if buyer keeps."
+    },
+    "alternativeOption": {
+      "label": "Return & Full Refund",
+      "details": "Buyer covers NT$60 shipping (no fault)."
+    }
+  },
+  "caseSummary": "Order: TW-11021\nEligibility: R1/R2/R3 ✅\nDecision: Neutral (product characteristic)\nOutcome: Partial refund NT$500"
+}

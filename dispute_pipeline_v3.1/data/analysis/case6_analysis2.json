@@ -1,0 +1,39 @@
+{
+  "eligibility": {
+    "r1": true,
+    "r2": true,
+    "r3": true,
+    "notes": "7-11 COD; opened ~18h after pickup; Order is not yet completed",
+    "policyAnchors": [
+      "ELI-301",
+      "ELI-302",
+      "ELI-303"
+    ]
+  },
+  "snadResult": {
+    "label": "SNAD",
+    "reason": "No reason provided by the model.",
+    "policyAnchors": [
+      "SND-501"
+    ]
+  },
+  "recommendation": {
+    "primaryOption": {
+      "label": "Return & Full Refund",
+      "details": " Seller reimburses NT$60 COD shipping and provides a return label.",
+      "policyAnchors": [
+        "OUT-801",
+        "FEE-A"
+      ]
+    },
+    "alternativeOption": {
+      "label": "Partial Refund & Keep Item",
+      "details": "Buyer keeps the item; offer 15–30% partial refund.",
+      "policyAnchors": [
+        "OUT-802",
+        "FEE-C"
+      ]
+    }
+  },
+  "caseSummary": "Order: TW-15011\nEligibility: R1/R2/R3 ✅\nKey: No reason provided by the model.\nDecision: SNAD\nOutcome: The system ultimately determined that the seller would release the item for return, with the buyer’s request being deferred to AI resolution."
+}

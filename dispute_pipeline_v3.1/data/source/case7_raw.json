@@ -1,0 +1,69 @@
+{
+  "id": "case7",
+  "title": "Dyson V8 — Battery duration dispute",
+  "transactionMethod": "7-11 COD",
+  "disputeOpenedAfterHours": 14,
+  "orderCompleted": false,
+
+  "listingInfo": {
+    "title": "Dyson V8 手持吸塵器 – 吸力強、狀況良好",
+    "listedPrice": "NT$3,200",
+    "condition": "8/10",
+    "disclosedFlaws": "None; seller states 20–25 min battery in normal mode.",
+    "attributes": "Dyson V8; cannot measure battery health; runtime varies by environment, head, floor type.",
+    "photos": [
+      { "url": "/images/case7/main.jpg", "label": "main + attachments" },
+      { "url": "/images/case7/battery.jpg", "label": "battery close-up" },
+      { "url": "/images/case7/side.jpg", "label": "side view" }
+    ]
+  },
+
+  "orderMeta": [
+    { "label": "Order ID", "value": "TW-19802" },
+    { "label": "Order Created", "value": "2025-10-05 12:33" },
+    { "label": "Seller Shipped", "value": "2025-10-05 18:10" },
+    { "label": "Arrived at Store", "value": "2025-10-06 15:25" },
+    { "label": "Buyer Picked Up", "value": "2025-10-06 19:02" },
+    { "label": "Dispute Opened", "value": "2025-10-07 09:12" }
+  ],
+
+  "complaint": "Buyer claims battery lasts only 12–13 minutes vs seller’s stated 20–25 min. No continuous recording; runtime depends on usage environment. Cannot verify fault. Classified as Neutral Dispute (SND-503).",
+
+  "chatLog": [
+    { "timestamp": "2025-10-05 12:20", "sender": "Buyer", "text": "你好，Dyson V8 還在嗎？" },
+    { "timestamp": "2025-10-05 12:22", "sender": "Seller", "text": "還在喔。" },
+
+    { "timestamp": "2025-10-05 12:23", "sender": "Buyer", "text": "吸力跟電池續航都還正常嗎？" },
+    { "timestamp": "2025-10-05 12:26", "sender": "Seller", "text": "我家用起來都正常，一般模式大概能吸 20 分鐘左右，沒問題。" },
+
+    { "timestamp": "2025-10-05 12:27", "sender": "Buyer", "text": "買多久了？" },
+    { "timestamp": "2025-10-05 12:29", "sender": "Seller", "text": "大概兩年。" },
+
+    { "timestamp": "2025-10-05 12:30", "sender": "Buyer", "text": "好，那我買了。寄到 7-11 Chengde 門市。" },
+    { "timestamp": "2025-10-05 12:31", "sender": "Seller", "text": "OK，我下午寄。" },
+
+    { "timestamp": "2025-10-05 12:33", "sender": "System", "text": "訂單建立 – Order ID：TW-19802" },
+    { "timestamp": "2025-10-05 18:10", "sender": "Seller", "text": "我已寄出。" },
+    { "timestamp": "2025-10-06 15:25", "sender": "System", "text": "包裹已抵達門市。" },
+    { "timestamp": "2025-10-06 19:02", "sender": "Buyer", "text": "已取件。" },
+
+    { "timestamp": "2025-10-07 09:12", "sender": "Buyer", "text": "我收到機器了，吸力沒問題。但電池只撐 12～13 分鐘，就沒電了，跟你說的 20–25 分鐘不太一樣。" },
+
+    { "timestamp": "2025-10-07 09:20", "sender": "Seller", "text": "咦？我家用的時候都有大概 20 分鐘耶。你是用一般模式嗎？吸頭不同也會影響續航喔。" },
+
+    { "timestamp": "2025-10-07 09:23", "sender": "Buyer", "text": "我用一般模式，也試了兩個吸頭，續航都差不多 12 分鐘左右。" },
+
+    { "timestamp": "2025-10-07 09:27", "sender": "Seller", "text": "Dyson 續航會看地板材質、吸頭、使用習慣…我真的不確定為什麼會差那麼多。" },
+
+    { "timestamp": "2025-10-07 09:31", "sender": "Buyer", "text": "但這樣跟你描述的有落差。" },
+
+    { "timestamp": "2025-10-07 09:35", "sender": "Seller", "text": "我沒有辦法測電池健康度啦，我只是如實說我家平常使用的狀況，不是故意寫錯的。" },
+
+    { "timestamp": "2025-10-07 09:40", "sender": "Buyer", "text": "我希望能退貨。" },
+
+    { "timestamp": "2025-10-07 09:45", "sender": "Seller", "text": "我真的很難判定是機器問題，還是使用環境造成的差異…那你先提交退貨吧，我讓系統看。" },
+
+    { "timestamp": "2025-10-07 09:46", "sender": "System", "text": "Buyer 提出退貨申請。" },
+    { "timestamp": "2025-10-07 09:58", "sender": "System", "text": "Seller 拒絕，待 AI 審查。" }
+  ]
+}

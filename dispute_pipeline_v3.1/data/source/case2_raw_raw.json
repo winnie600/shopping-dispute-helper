@@ -1,0 +1,48 @@
+{
+  "id": "case2",
+  "title": "Nike Air Jordan 1 “University Blue” — US9",
+
+  "transactionMethod": "In-app + 7-ELEVEN COD",
+  "disputeOpenedAfterHours": 62,
+  "orderCompleted": false,
+
+  "listingInfo": {
+    "title": "Nike Air Jordan 1 Retro High OG “University Blue” — 100% Authentic",
+    "listedPrice": "NT$5,200",
+    "condition": "Like new (worn twice)",
+    "disclosedFlaws": "Minor crease on toe box (photo 3), slightly dented box",
+    "attributes": "US9 (27cm), with original box & tag, purchased at Nike Taipei, 2023 release",
+    "photos": [
+      { "url": "/images/case2/aj1_front.jpg", "label": "front view" },
+      { "url": "/images/case2/aj1_side.jpg", "label": "side profile" },
+      { "url": "/images/case2/aj1_toe.jpg", "label": "toe crease close-up" },
+      { "url": "/images/case2/aj1_label.jpg", "label": "box label US9 / 27cm" }
+    ]
+  },
+  "orderMeta": [
+    { "label": "Order ID", "value": "TW-11021" },
+    { "label": "Transaction Method", "value": "In-app + 7-ELEVEN COD" },
+    { "label": "Dispute Opened After", "value": "62h after pickup" },
+    { "label": "Order Completed", "value": "No" }
+  ],
+  "complaint": "Buyer says item fits like US8.5 though box says US9.",
+  "chatLog": [
+    { "timestamp": "2025-09-16 19:48", "sender": "Buyer", "text": "Hi! Is this pair still available? Looks really clean." },
+    { "timestamp": "2025-09-16 19:51", "sender": "Seller", "text": "Yes, still available. Worn twice indoors, soles are very clean." },
+    { "timestamp": "2025-09-16 19:53", "sender": "Buyer", "text": "Is the sizing true? I usually wear US9 for other Jordan 1s." },
+    { "timestamp": "2025-09-16 19:56", "sender": "Seller", "text": "Yep, true US9. I wear US9 too and it fits snugly." },
+    { "timestamp": "2025-09-16 20:01", "sender": "Buyer", "text": "Cool. If you can do NT$5,000, I’ll take it." },
+    { "timestamp": "2025-09-16 20:03", "sender": "Seller", "text": "Deal." },
+    { "timestamp": "2025-09-16 20:04", "sender": "Buyer", "text": "Ship via 7-ELEVEN COD, I’ll cover shipping." },
+    { "timestamp": "2025-09-16 20:06", "sender": "Seller", "text": "Sure, COD fee is NT$60, paid at pickup." },
+    { "timestamp": "2025-09-16 20:09", "sender": "Buyer", "text": "Send it to 7-ELEVEN Dunbei (Songshan), please." },
+    { "timestamp": "2025-09-16 20:10", "sender": "Seller", "text": "Okay, I’ll ship tomorrow morning." },
+    { "timestamp": "2025-09-16 21:12", "sender": "System", "text": "Order created (Order ID: TW-11021)." },
+
+    { "timestamp": "2025-09-19 09:40", "sender": "Buyer", "text": "I just tried them — they fit like US8.5, not US9. I want a return + refund.", "highlight": true },
+    { "timestamp": "2025-09-19 10:10", "sender": "Seller", "text": "That’s strange. I also wear US9 and they fit me fine." },
+    { "timestamp": "2025-09-19 10:18", "sender": "Buyer", "text": "They’re tighter than my other pairs. Can I send them back?" },
+
+    { "timestamp": "2025-09-19 10:20", "sender": "AI", "text": "Dispute received.\n→ Checking external product data for “Air Jordan 1 University Blue”…" }
+  ]
+}

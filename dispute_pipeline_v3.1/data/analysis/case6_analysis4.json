@@ -1,0 +1,39 @@
+{
+  "eligibility": {
+    "r1": true,
+    "r2": true,
+    "r3": true,
+    "notes": "7-11 COD; opened ~18h after pickup; Order is not yet completed",
+    "policyAnchors": [
+      "ELI-301",
+      "ELI-302",
+      "ELI-303"
+    ]
+  },
+  "snadResult": {
+    "label": "SNAD",
+    "reason": "The buyer reports the actual hoodie color is significantly darker than shown in the seller’s bright-window photos. The seller’s photos were taken under strong natural lighting, which caused a discrepancy in the color. This is a misleading image based on the difference in appearance.",
+    "policyAnchors": [
+      "SND-501"
+    ]
+  },
+  "recommendation": {
+    "primaryOption": {
+      "label": "Return & Full Refund",
+      "details": " Seller reimburses NT$60 COD shipping and provides a return label.",
+      "policyAnchors": [
+        "OUT-801",
+        "FEE-A"
+      ]
+    },
+    "alternativeOption": {
+      "label": "Partial Refund & Keep Item",
+      "details": "Buyer keeps the item; offer 15–30% partial refund.",
+      "policyAnchors": [
+        "OUT-802",
+        "FEE-C"
+      ]
+    }
+  },
+  "caseSummary": "Order: TW-15011\nEligibility: R1/R2/R3 ✅\nKey: The buyer reports the actual hoodie color is significantly darker than shown in the seller’s bright-window photos. The seller’s photos were taken under strong natural lighting, which caused a discrepancy in the color. This is a misleading image based on the difference in appearance.\nDecision: SNAD\nOutcome: The system approved the return request."
+}
