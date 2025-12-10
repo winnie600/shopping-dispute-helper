@@ -1,0 +1,18 @@
+    # -------------------------------
+    snad: dict = {}
+    snad = data.get("snadResult", {}) or {}
+
+    final_snad = {
+        "label": snad.get("label", "Neutral"),
+        "reason": snad.get("reason", "").strip(),
+    }
+
+    # If model STILL returns empty reason → fill it with fallback
+    if final_snad["reason"] == "":
+        final_snad["reason"] = "The decision is based on policy rules; no material mismatch was identified."
+
+    return {"snadResult": final_snad}
+
+Examples:
+
+- SNAD applies ONLY if the seller listed “US9” but the box label shows “US8.5”.

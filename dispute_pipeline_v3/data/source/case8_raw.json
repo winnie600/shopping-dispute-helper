@@ -1,0 +1,70 @@
+{
+  "id": "case8",
+  "title": "AirPods Pro 2 — Counterfeit suspicion",
+  "transactionMethod": "7-11 COD",
+  "disputeOpenedAfterHours": 36,
+  "orderCompleted": false,
+
+  "listingInfo": {
+    "title": "AirPods Pro 2 — 全新正品 — Fullbox — 附 StudioA 發票",
+    "listedPrice": "NT$3,450",
+    "condition": "Claimed Brand New",
+    "disclosedFlaws": "Seller claims: brand new, unused, original, with StudioA receipt.",
+    "attributes": "Claimed unopened fullbox; seller says it's a prize; invoice provided (fake).",
+    "photos": [
+      { "url": "/images/case8/box_serial.jpg", "label": "box serial" },
+      { "url": "/images/case8/invoice_fake.jpg", "label": "fake StudioA invoice" }
+    ]
+  },
+
+  "orderMeta": [
+    { "label": "Order ID", "value": "TW-16852" },
+    { "label": "Order Created", "value": "2025-11-10 12:59" },
+    { "label": "Seller Shipped", "value": "2025-11-10 17:10" },
+    { "label": "Arrived at Store", "value": "2025-11-11 13:50" },
+    { "label": "Buyer Picked Up", "value": "2025-11-11 19:05" },
+    { "label": "Dispute Opened", "value": "2025-11-13 07:50" }
+  ],
+
+  "complaint": "Buyer discovered item is counterfeit after comparison tests. Serial mismatch, ANC/Transparency malfunction, firmware unknown, fake StudioA invoice. Dispute opened after 36 hours → AI cannot adjudicate; must escalate to CS due to High-Risk Counterfeit.",
+
+  "chatLog": [
+
+    { "timestamp": "2025-11-10 12:45", "sender": "Buyer", "text": "嗨～AirPods 還在嗎？" },
+    { "timestamp": "2025-11-10 12:46", "sender": "Seller", "text": "在喔。" },
+
+    { "timestamp": "2025-11-10 12:47", "sender": "Buyer", "text": "怎麼全新還要便宜賣？有什麼原因嗎？" },
+    { "timestamp": "2025-11-10 12:48", "sender": "Seller", "text": "我剛換 iPhone 16 Pro，結帳時抽獎抽到的。我家已經有耳機，所以賣掉。" },
+
+    { "timestamp": "2025-11-10 12:49", "sender": "Buyer", "text": "真的完全沒用過嗎？有啟用過嗎？" },
+    { "timestamp": "2025-11-10 12:51", "sender": "Seller", "text": "沒用過，沒啟用過，盒子都是新的。" },
+
+    { "timestamp": "2025-11-10 12:52", "sender": "Buyer", "text": "序號你有檢查嗎？AirPods 假貨很多欸。" },
+    { "timestamp": "2025-11-10 12:54", "sender": "Seller", "text": "我有發票啊，StudioA 的。你看照片就放心了。" },
+
+    { "timestamp": "2025-11-10 12:56", "sender": "Buyer", "text": "好，我看一下。" },
+    { "timestamp": "2025-11-10 12:58", "sender": "Buyer", "text": "看起來沒問題，那我買了。寄到 7-11 Minquan West 喔。" },
+    { "timestamp": "2025-11-10 12:59", "sender": "Seller", "text": "好，我今天寄。" },
+
+    { "timestamp": "2025-11-10 12:59", "sender": "System", "text": "訂單成立 — TW-16852" },
+    { "timestamp": "2025-11-10 17:10", "sender": "Seller", "text": "已寄出。" },
+    { "timestamp": "2025-11-11 13:50", "sender": "System", "text": "包裹已抵達門市。" },
+    { "timestamp": "2025-11-11 19:05", "sender": "Buyer", "text": "收到，看起來滿新的。我先用幾天試試看，謝啦。" },
+    { "timestamp": "2025-11-11 20:13", "sender": "Seller", "text": "好喔。" },
+
+    { "timestamp": "2025-11-13 07:50", "sender": "Buyer", "text": "我用一天後覺得怪怪的。打開盒子時彈窗很慢，有時甚至不跳。音質也不像我以前聽的 Pro 2。" },
+
+    { "timestamp": "2025-11-13 07:51", "sender": "Seller", "text": "怎麼會？這是抽到的正品，有發票耶。" },
+
+    { "timestamp": "2025-11-13 08:03", "sender": "Buyer", "text": "我借朋友的 Pro 2 比對了：ANC 幾乎沒作用、通透延遲、Spatial Audio 不能開、Firmware unknown、盒上序號跟藍牙的不一樣、連線速度異常、Find My 顯示錯誤。我錄影片給你看。" },
+
+    { "timestamp": "2025-11-13 08:12", "sender": "Seller", "text": "不可能啦！你一定是測錯。我賣這麼便宜，你還嫌三嫌四？" },
+
+    { "timestamp": "2025-11-13 08:16", "sender": "Buyer", "text": "我有兩副耳機交叉測試，問題非常明顯。這是假貨。" },
+
+    { "timestamp": "2025-11-13 08:17", "sender": "Seller", "text": "我才不退！你愛怎樣就怎樣。" },
+
+    { "timestamp": "2025-11-13 08:18", "sender": "System", "text": "Buyer 提出退貨申請 — 理由：假貨 counterfeit。" },
+    { "timestamp": "2025-11-13 08:19", "sender": "System", "text": "Seller 拒絕退貨。" }
+  ]
+}

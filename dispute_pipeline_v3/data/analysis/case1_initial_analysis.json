@@ -1,0 +1,27 @@
+{
+  "snadResult": {
+    "label": "SNAD",
+    "reason": "The seller did not disclose the screen replacement, which is a material fact that affects the item's value and condition.",
+    "policyAnchors": [
+      "SND-501"
+    ]
+  },
+  "recommendation": {
+    "primaryOption": {
+      "label": "Return & Full Refund",
+      "details": " Seller reimburses NT$60 COD shipping and provides a return label.",
+      "policyAnchors": [
+        "OUT-801",
+        "FEE-A"
+      ]
+    },
+    "alternativeOption": {
+      "label": "Partial Refund & Keep Item",
+      "details": "Buyer keeps the item; offer 15–30% partial refund.",
+      "policyAnchors": [
+        "OUT-802",
+        "FEE-C"
+      ]
+    }
+  }
+}

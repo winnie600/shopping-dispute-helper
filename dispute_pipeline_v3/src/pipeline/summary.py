@@ -113,9 +113,9 @@ def build_case_summary(extracted: dict, stage2: dict, eligibility_notes: str, mo
     if order_id:
         lines.append(f"Order: {order_id}")
 
-    lines.append("Eligibility: R1/R2/R3 ✅")
-    lines.append(f"Key: {key_line}")
-    lines.append(f"Decision: {label}")
+        lines.append("Eligibility: R1/R2/R3 ✅")
+        lines.append(f"Key: {key_line}")
+        lines.append(f"Decision: {label}")
 
     if outcome:
         # If there's a real outcome → display it

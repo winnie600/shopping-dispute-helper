@@ -110,9 +110,18 @@ src/pipeline/
 This v3 modular version is functionally identical to the previously working single-file version, but structured for clarity and long-term maintainability.
 
 ```
+
+## 使用方法
+
 python src\arbitration_pipeline.py --case-id case1 --data-dir .\data\source --out-dir .\data\analysis --model gemma3:1b
 python src\arbitration_pipeline.py --case-id case2 --data-dir .\data\source --out-dir .\data\analysis --model gemma3:1b
 python src\arbitration_pipeline.py --case-id case3 --data-dir .\data\source --out-dir .\data\analysis --model gemma3:1b
+
+
+
+python src/initial_judgement_chatbot.py --file ./data/source/case2_raw_raw.json --model openai:gpt-4o-mini
+
+
 
 ---
 

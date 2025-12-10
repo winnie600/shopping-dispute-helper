@@ -1,0 +1,70 @@
+{
+  "id": "case6",
+  "title": "Beige Hoodie — Color discrepancy",
+  "transactionMethod": "7-11 COD",
+  "disputeOpenedAfterHours": 18,
+  "orderCompleted": false,
+
+  "listingInfo": {
+    "title": "Oversized Beige Hoodie",
+    "listedPrice": "NT$480",
+    "condition": "9/10",
+    "disclosedFlaws": "None; seller stated photos were taken by phone.",
+    "attributes": "Cotton fleece, mid-thickness, worn 3–4 times, machine washable, purchased from Uniqlo.",
+    "photos": [
+      { "url": "/images/case6/photo1.jpg", "label": "bright indoor photo" },
+      { "url": "/images/case6/photo2.jpg", "label": "window lighting photo" }
+    ]
+  },
+
+  "orderMeta": [
+    { "label": "Order ID", "value": "TW-15011" },
+    { "label": "Order Created", "value": "2025-09-28 14:40" },
+    { "label": "Seller Shipped", "value": "2025-09-28 19:05" },
+    { "label": "Arrived at Store", "value": "2025-09-29 14:32" },
+    { "label": "Buyer Picked Up", "value": "2025-09-29 19:10" },
+    { "label": "Dispute Opened", "value": "2025-09-30 09:10" }
+  ],
+
+  "complaint": "Buyer reports the actual hoodie color is significantly darker than shown in seller's bright-window photos. Seller unintentionally created misleading images due to strong natural lighting. Classified as SNAD (SND-501 Misleading Image).",
+
+  "chatLog": [
+    { "timestamp": "2025-09-28 14:20", "sender": "Buyer", "text": "Hi! Is the hoodie still available?" },
+    { "timestamp": "2025-09-28 14:21", "sender": "Seller", "text": "Yes, still available." },
+
+    { "timestamp": "2025-09-28 14:22", "sender": "Buyer", "text": "Is the material cotton fleece? Does it feel thick?" },
+    { "timestamp": "2025-09-28 14:23", "sender": "Seller", "text": "Medium thickness, cotton fleece, quite comfortable." },
+
+    { "timestamp": "2025-09-28 14:24", "sender": "Buyer", "text": "How many times have you worn it? Any pilling?" },
+    { "timestamp": "2025-09-28 14:25", "sender": "Seller", "text": "Around 3–4 times, no pilling so far." },
+
+    { "timestamp": "2025-09-28 14:26", "sender": "Buyer", "text": "Where did you buy it?" },
+    { "timestamp": "2025-09-28 14:27", "sender": "Seller", "text": "Uniqlo Taiwan." },
+
+    { "timestamp": "2025-09-28 14:28", "sender": "Buyer", "text": "Anything special I need to be careful with when washing? Does it fade?" },
+    { "timestamp": "2025-09-28 14:30", "sender": "Seller", "text": "I just throw it in the washing machine, no fading." },
+
+    { "timestamp": "2025-09-28 14:31", "sender": "Buyer", "text": "Okay, I'll buy it. Please ship to 7-11 Minquan East." },
+    { "timestamp": "2025-09-28 14:32", "sender": "Seller", "text": "Okay, I'll ship it this afternoon." },
+
+    { "timestamp": "2025-09-28 14:40", "sender": "System", "text": "Order created – Order ID: TW-15011" },
+    { "timestamp": "2025-09-28 19:05", "sender": "Seller", "text": "Shipped." },
+    { "timestamp": "2025-09-29 14:32", "sender": "System", "text": "Package has arrived at the store." },
+    { "timestamp": "2025-09-29 19:10", "sender": "Buyer", "text": "Picked it up~" },
+
+    { "timestamp": "2025-09-30 09:10", "sender": "Buyer", "text": "I received the hoodie, but the color is really different from the photos. In the photos it looked like light beige, but the actual item is closer to dark yellow/brown. (Attached natural-light photos)" },
+
+    { "timestamp": "2025-09-30 09:16", "sender": "Seller", "text": "Huh? Why is it so different? Maybe I was near the window when taking photos and the lighting was too strong. I really didn’t edit anything—my phone probably auto-brightened the picture." },
+
+    { "timestamp": "2025-09-30 09:18", "sender": "Buyer", "text": "Yeah, I know it wasn’t intentional. But I bought it expecting light beige, and the actual color really isn’t the same." },
+
+    { "timestamp": "2025-09-30 09:22", "sender": "Seller", "text": "Looking at your photos, it is indeed a lot darker. Sorry, I honestly didn’t realize lighting would change it that much." },
+
+    { "timestamp": "2025-09-30 09:24", "sender": "Buyer", "text": "So I would like to request a return." },
+
+    { "timestamp": "2025-09-30 09:28", "sender": "Seller", "text": "Okay… I’ll let the system decide." },
+
+    { "timestamp": "2025-09-30 09:29", "sender": "System", "text": "Buyer submitted a return request." },
+    { "timestamp": "2025-09-30 09:41", "sender": "System", "text": "Seller rejected return → AI review required." }
+  ]
+}

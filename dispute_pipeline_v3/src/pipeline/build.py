@@ -23,6 +23,22 @@ from pipeline.policy import (
 )
 from pipeline.summary import build_case_summary
 
+# =============================================
+# file: src/pipeline/build.py
+# （最終組裝前再保險跑一次）
+# =============================================
+from __future__ import annotations
+from typing import Any, Dict
+from .stage2_canonicalize import canonicalize_stage2
+
+def assemble_final_output(stage2_raw: Any, **rest) -> Dict[str, Any]:
+    stage2 = canonicalize_stage2(stage2_raw)  # <-- 保證讀得到 reason
+    final = {
+        "snadResult": stage2["snadResult"],   # 只讀 nested
+        **rest,                               
+    }
+    return final
+
 
 # ======================================================
 # Build Recommendation Section (Stage 3)

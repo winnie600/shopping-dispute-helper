@@ -25,7 +25,10 @@ from pipeline.policy import (
 from pipeline.summary import build_case_summary
 from pipeline.outcome_ai import ai_summarize_outcome
 
-
+from openai import OpenAI
+import os
+from dotenv import load_dotenv
+load_dotenv()
 # ======================================================
 # Stage 3 — Recommendation Builder
 # ======================================================
@@ -124,7 +127,7 @@ def build_analysis(extracted: dict, stage2: dict, model_name: str) -> dict:
         extracted,
         stage2,
         notes,
-        model_name,
+        "gemma3:1b",   # ← Stage 3 永遠使用本地模型
     )
 
     return {

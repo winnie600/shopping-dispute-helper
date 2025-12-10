@@ -5,6 +5,7 @@
 
 import json
 import re
+
 from pathlib import Path
 from typing import Any, Dict, Optional
 
@@ -12,11 +13,56 @@ from pipeline.postprocess import clean_json_output, coerce_to_json
 from langchain_ollama import OllamaLLM
 
 
-# -------------------------------
-# LLM Wrapper
-# -------------------------------
+from openai import OpenAI
+import os
+from langchain_ollama import OllamaLLM
+
+from dotenv import load_dotenv
+load_dotenv()
+
+
+# -----------------------------------
+# Unified LLM Loader
+# -----------------------------------
 def _get_llm(model_name: str):
-    return OllamaLLM(model=model_name)
+    """
+    If model_name starts with 'openai:', call OpenAI model.
+    Otherwise use Ollama local model.
+    """
+
+    if model_name.startswith("openai:"):
+        real_name = model_name.replace("openai:", "")
+        return OpenAILLMWrapper(real_name)
+    else:
+        return OllamaLLM(model=model_name)
+
+
+class OpenAILLMWrapper:
+    def __init__(self, model_name: str):
+        from openai import OpenAI
+        import os
+
+        key = os.getenv("OPENAI_API_KEY")
+        if not key:
+            raise RuntimeError("OPENAI_API_KEY not found in environment variables.")
+
+        self.client = OpenAI(api_key=key)
+        self.model_name = model_name
+
+    def invoke(self, prompt: str) -> str:
+        """
+        Simulate the same interface as OllamaLLM.invoke(prompt),
+        returning ONLY the model's text output.
+        """
+
+        response = self.client.chat.completions.create(
+            model=self.model_name,
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0,
+            max_tokens=2048,   # 足夠你的 JSON 輸出
+        )
+
+        return response.choices[0].message.content
 
 
 # -------------------------------
@@ -35,6 +81,8 @@ SNAD (SND-501):
 Neutral(SND-502):
 - Subjective dissatisfaction or non-material differences (e.g., comfort, fit, expectations, minor wear, normal product variation).
 - Applies whenever the seller’s information is accurate and no material mismatch exists.
+- Change-of-mind returns (e.g., buyer no longer wants item, misordered, found cheaper elsewhere)
+  are ALWAYS Neutral because no objective mismatch exists.
 
 Insufficient Evidence(SND-503):
 - Buyer claims an issue but provides no objective evidence of mismatch.
@@ -46,7 +94,12 @@ These are product characteristics or subjective sensations → ALWAYS classify a
 Examples:
 - Buyer says “fits like 8.5” but box/listing show “US9” → Neutral.
 - Model known to run small → Neutral.
-- SNAD applies ONLY if the seller listed “US9” but the box label shows “US8.5”.
+
+[COLOR & LIGHTING RULE — ALWAYS NEUTRAL]
+Color differences caused by lighting, angles, photography, camera settings, or screen display variation
+do NOT qualify as SNAD. These are considered normal product variation and subjective perception.
+Unless the seller explicitly stated a specific color that materially differs from the delivered item,
+these cases must ALWAYS be classified as Neutral (SND-502).
 
 
 [WHEN TO CLASSIFY AS SNAD — ONLY IF ALL ARE TRUE]
@@ -167,18 +220,31 @@ def stage2_llm_evaluate(
                 json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8"
             )
 
+
     # -------------------------------
     # Extract SNAD result
     # -------------------------------
-    snad = data.get("snadResult", {}) or {}
+    raw_snad = data.get("snadResult", {})
+
+    # Normalize SNAD result — LLM may return a string like "SNAD"
+    if isinstance(raw_snad, str):
+        snad = {"label": raw_snad}
+    elif isinstance(raw_snad, dict):
+        snad = raw_snad
+    else:
+        snad = {}
+
+    # reason may appear at top-level OR inside snadResult
+    reason = data.get("reason") or snad.get("reason", "") or ""
+
 
     final_snad = {
         "label": snad.get("label", "Neutral"),
         "reason": snad.get("reason", "").strip(),
     }
 
-    # If model STILL returns empty reason → fill it with fallback
+    # Fallback reason (LLM sometimes omits it)
     if final_snad["reason"] == "":
-        final_snad["reason"] = "The decision is based on policy rules; no material mismatch was identified."
+        final_snad["reason"] = "No reason provided by the model."
 
     return {"snadResult": final_snad}
