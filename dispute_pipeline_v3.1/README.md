@@ -165,9 +165,11 @@ Server will:
 
 This powers the React Staff Console’s **AI Analysis** panel.
 
----
+`
 
 # 📂 Module Description
+
+```
 
 ```
 
@@ -194,6 +196,7 @@ src/pipeline/
 - All outputs strictly follow SNAD policy rules and consistent JSON schema.
 
 ```
+
 
 
 
