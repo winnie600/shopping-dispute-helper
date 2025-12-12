@@ -179,7 +179,7 @@ summary_trigger.py
 ```
 ```
 
-# 🔧 **Stage 1 — Extract & Normalize（資料抽取與規範化）**
+##🔧 **Stage 1 — Extract & Normalize（資料抽取與規範化）**
 
 由 `extractor.py` 完成，負責：
 
@@ -191,7 +191,7 @@ summary_trigger.py
 
 ---
 
-# 🏛 **Stage 2 — Policy-Driven SNAD Decision Engine（政策導向之 SNAD 決策引擎）**
+## 🏛 **Stage 2 — Policy-Driven SNAD Decision Engine（政策導向之 SNAD 決策引擎）**
 
 Stage 2 是 v3 的核心，由多支模組一起完成：
 
@@ -243,7 +243,7 @@ Stage 2 是 v3 的核心，由多支模組一起完成：
 
 ---
 
-# 🗂 **Stage 3 — Post-Process, Recommendation, Summary**
+## 🗂 **Stage 3 — Post-Process, Recommendation, Summary**
 
 ### 🔹 `postprocess.py`
 
