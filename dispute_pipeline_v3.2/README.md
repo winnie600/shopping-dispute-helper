@@ -1,4 +1,7 @@
-# 📁 **dispute_pipeline_v3 專案結構（最終版）**
+
+---
+
+# 📁 **dispute_pipeline_v3 專案結構（最終版 v3.2）**
 
 ```
 dispute_pipeline_v3/
@@ -8,6 +11,11 @@ dispute_pipeline_v3/
 │
 ├── src/
 │   ├── __init__.py
+│   ├── app/
+│   │     └── main.py                 ←（v3.1 新增）後端 API（前後端嵌入用）
+│   │
+│   ├── summary_trigger.py            ←（v3.2 新增）AI 總結觸發器（判斷時間點）
+│   │
 │   ├── pipeline/
 │   │     ├── __init__.py
 │   │     ├── extractor.py
@@ -17,114 +25,171 @@ dispute_pipeline_v3/
 │   │     ├── policy.py
 │   │     ├── outcome_ai.py
 │   │     ├── summary.py
-│   │     └── build.py
+│   │     └── build.py                ← 後端 API、整合 Stage1/2/3 + Summary
 │   │
-│   └── arbitration_pipeline.py   ← 主入口（舊單檔版同功能）
+│   └── arbitration_pipeline.py       ← 主入口（CLI版本，與舊單檔版同功能）
 │
 └── data/
-    ├── source/     ← 你的 case1_raw.json, case2_raw.json, case3_raw.json
-    └── analysis/   ← 產出分析結果
+    ├── source/     ← case1_raw.json, case2_raw.json, case3_raw.json
+    └── analysis/   ← 產出分析結果（eligibility + SNAD + recommendation + summary）
 ```
-
-
-# ✅ **（1）README.md**
-
-```
-# C2C Dispute Arbitration Pipeline (Modular v3)
-
-This project implements a modular arbitration pipeline for C2C SNAD (Significantly Not As Described) dispute resolution.  
-It follows a 3-stage structure:
-
-### Stage 1 — Extraction
-Reads raw case JSON and normalizes:
-- Listing info
-- Complaint summary
-- Highlighted messages
-- Timeline (chat log)
-- Transaction metadata (method, dispute hours, order completed)
-
-### Stage 2 — LLM Decision Engine
-Uses Gemma 3 1B/2B to classify:
-- SNAD (SND-501)
-- Neutral (SND-502)
-- Insufficient Evidence (SND-503)
-
-LLM output is restricted to only:
-```
-
-{
-"snadResult": {
-"label": "...",
-"reason": "..."
-}
-}
-
-```
-
-### Stage 3 — Formatter
-Adds:
-- R1/R2/R3 eligibility flags
-- Policy anchors (ELI, SND, OUT, FEE)
-- Recommendation A/B
-- AI-generated one-sentence Outcome summary
-- Case summary text
 
 ---
 
-## Run the pipeline:
+# ✅ **（1）README.md（v3.2 更新後版本）**
+
+````
+# C2C Dispute Arbitration Pipeline (Modular v3.2)
+
+This project implements a modular arbitration pipeline for C2C SNAD (Significantly Not As Described) dispute resolution.  
+It follows a 3-stage structure and now includes:
+
+- AI Summary Trigger (based on chat silence intervals)
+- Full backend API for frontend integration
+- Improved Stage 2 decision stability and JSON consistency
+
+---
+
+### Stage 1 — Extraction
+Reads raw case JSON and normalizes:
+- Listing info  
+- Complaint summary  
+- Highlighted messages  
+- Timeline (chat log)  
+- Transaction metadata (method, dispute hours, order completed)
+
+---
+
+### Stage 2 — LLM Decision Engine
+Uses cloud model (OpenAI GPT-4o-mini) or local Gemma models to classify:
+
+- SNAD (SND-501)  
+- Neutral (SND-502)  
+- Insufficient Evidence (SND-503)
+
+LLM output is restricted to only:
+
+```json
+{
+  "snadResult": {
+    "label": "...",
+    "reason": "..."
+  }
+}
+````
+
+Policies (ELI / SND / OUT / FEE) are referenced automatically inside the prompt.
+
+---
+
+### Stage 3 — Formatter
+
+Adds:
+
+* R1/R2/R3 eligibility flags
+* Policy anchors
+* Recommendation A/B
+* AI-generated one-sentence Outcome summary
+* Case full summary (Stage 3)
+
+---
+
+### **AI Summary Trigger（v3.2 新增）**
+
+`summary_trigger.py` detects:
+
+* Long silence gaps between chat messages
+* End-of-conversation summary moments
+
+Auto-generates:
+
+* Key issues
+* Buyer/Seller claims
+* Turning points
+* Arbitration-relevant facts
+
+Used by both backend API and future frontend chat UI.
+
+---
+
+### **Backend API Integration（v3.2 新增）**
+
+`app/main.py` exposes:
 
 ```
-
-python src/arbitration_pipeline.py --case-id case1 --model gemma3:1b
-
+GET /api/analysis/{case_id}
 ```
 
-Input:
+Frontend can directly embed analysis results:
+
+* Eligibility
+* SNAD decision
+* Final recommendation
+* Full AI summary
+
+---
+
+## Run the pipeline (CLI):
+
+```
+python src/arbitration_pipeline.py --case-id case1 --data-dir ./data/source --out-dir ./data/analysis --model openai:gpt-4o-mini
+```
+
+Input file:
 `data/source/case1_raw.json`
 
-Output:
+Output file:
 `data/analysis/case1_analysis.json`
+
+---
+
+## Run initial chatbot version:
+
+```
+python src/initial_judgement_chatbot.py --file ./data/source/case2_raw_raw.json --model openai:gpt-4o-mini
+```
+
+---
+
+## Start API server (for frontend integration)
+
+```
+uvicorn app.main:app --reload
+```
 
 ---
 
 ## Module Structure
 
 ```
-
 src/pipeline/
 │
 ├── extractor.py      # Stage 1 – Parse raw case
 ├── rflags.py         # Compute R1/R2/R3
-├── llm_stage2.py     # Stage 2 – LLM SNAD classification
-├── postprocess.py    # Clean JSON, strip extra keys, enforce rules
-├── policy.py         # Policy anchor helpers
-├── outcome_ai.py     # AI one-line final outcome summarizer
+├── llm_stage2.py     # Stage 2 – LLM SNAD classification + policy reference
+├── postprocess.py    # Clean JSON, enforce formatting rules
+├── policy.py         # Policy anchor utilities (ELI/SND/OUT/FEE)
+├── outcome_ai.py     # AI-generated outcome statement
 ├── summary.py        # Build final caseSummary block
-└── build.py          # Stage 3 – Gather everything into final output
+└── build.py          # Orchestrates Stage 1/2/3 for API & CLI outputs
+```
+
+---
+
+## Notes
+
+This v3.2 modular version includes:
+
+* Improved Stage 2 prompt accuracy
+* Stable JSON formatting
+* Auto-summary at conversation breakpoints
+* Full backend → frontend integration
+
+It is functionally more reliable than v2 and earlier v3 versions.
 
 ```
 
 ---
 
-## Note
-This v3 modular version is functionally identical to the previously working single-file version, but structured for clarity and long-term maintainability.
-
+如果你想讓我把它 **變成更正式的期末報告用版本** 或是 **加上流程圖、架構圖、badge、彩色 emoji 版 README**，我可以再幫你升級！
 ```
-
-## 使用方法
-
-python src\arbitration_pipeline.py --case-id case1 --data-dir .\data\source --out-dir .\data\analysis --model gemma3:1b
-python src\arbitration_pipeline.py --case-id case2 --data-dir .\data\source --out-dir .\data\analysis --model gemma3:1b
-python src\arbitration_pipeline.py --case-id case3 --data-dir .\data\source --out-dir .\data\analysis --model gemma3:1b
-
-
-python src\arbitration_pipeline.py --case-id case1 --data-dir .\data\source --out-dir .\data\analysis --model openai:gpt-4o-mini
-
-
-python src/initial_judgement_chatbot.py --file ./data/source/case2_raw_raw.json --model openai:gpt-4o-mini
-
-uvicorn app.main:app --reload
-
-
----
-
