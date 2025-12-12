@@ -3,8 +3,9 @@
 ---
 ## 更新日誌
 
-後端pipeline v3.1 前後端嵌入 (能夠看到生成ai analysis在demo網頁上的顯示)。
-後端pipeline v3.2 解決前端嵌入過程造成的網頁排版錯誤 及 新增AI案件摘要觸發機制的功能。
+後端pipeline v3.1 前後端嵌入 (能夠看到生成ai analysis在demo網頁上的顯示)。  
+後端pipeline v3.2 新增AI案件摘要觸發機制的功能。  
+前端UI v2.1 解決前端嵌入過程造成的網頁排版錯誤。  
 
 ---
 
