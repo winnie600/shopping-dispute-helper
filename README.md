@@ -85,7 +85,7 @@ data/source/caseX_raw.json
            │
            ▼
        rflags.py
-（計算 Eligibility：R1/R2/R3 + Red Flags）
+（計算 Eligibility：R1/R2/R3 ）
            │
            ▼
      llm_stage2.py
@@ -97,11 +97,11 @@ data/source/caseX_raw.json
            │
            ▼
      outcome_ai.py
-（產生 Option A/B 等方案建議）
+（產生最後買家與賣家的討論結果）
            │
            ▼
        summary.py
-（組合 Case Summary 文字敘述）
+（組合 Case Summary 文字敘述與前面的摘要 如option和判定結果）
            │
            ▼
 data/analysis/caseX_analysis.json
