@@ -65,6 +65,119 @@ v3.2 能將整個仲裁流程完整模組化，包含：
 
 ---
 
+````markdown
+## 🔧 技術架構（Technical Architecture）
+
+本專案後端主要分成兩條路線：
+
+1. **離線 Pipeline（CLI 執行）**：從 `data/source` 讀取單一 case，跑完整 Stage1～Stage3，輸出到 `data/analysis`。  
+2. **線上 API（前後端嵌入）**：透過 `app/main.py` 提供 `/api/analysis/{case_id}` 給前端呼叫，同樣走內部 pipeline，只是改成即時回傳 JSON。
+
+---
+
+### 1️⃣ 後端 Pipeline 資料流（CLI / API 共用）
+
+```text
+data/source/caseX_raw.json
+           │
+           ▼
+     extractor.py
+  （Stage 1：資料抽取與整理）
+           │
+           ▼
+       rflags.py
+（計算 Eligibility：R1/R2/R3 + Red Flags）
+           │
+           ▼
+     llm_stage2.py
+（Stage 2：LLM 依政策判定 SNAD / Neutral / IE）
+           │
+           ▼
+    postprocess.py
+（清理 LLM 輸出、保證為合法 JSON）
+           │
+           ▼
+     outcome_ai.py
+（產生 Option A/B 等方案建議）
+           │
+           ▼
+       summary.py
+（組合 Case Summary 文字敘述）
+           │
+           ▼
+data/analysis/caseX_analysis.json
+（最終輸出：eligibility + snadResult + recommendation + summary）
+````
+
+上述流程會被：
+
+* `arbitration_pipeline.py` 在 CLI 模式下直接呼叫
+* `build.py` 封裝成一個可供 API 使用的 pipeline 函式
+
+---
+
+### 2️⃣ API & 前端嵌入架構（v3.1+）
+
+```text
+Frontend (c2c-dispute-ui_v2.1)
+      │
+      │  GET /api/analysis/{case_id}
+      ▼
+Backend FastAPI (app/main.py)
+      │
+      ▼
+   build.py
+（內部呼叫 Stage1/2/3 模組）
+      │
+      ▼
+ 全部結果組成 JSON 回傳
+      │
+      ▼
+Frontend Staff Console 顯示：
+- Listing / Chat
+- Eligibility (R1/R2/R3)
+- SNAD / Neutral / IE
+- Policy Anchors
+- Option A / B 建議
+- Final Case Summary
+```
+
+前端只需要關心一個 API：
+
+```http
+GET /api/analysis/{case_id}
+```
+
+就能取得包含 eligibility、snadResult、recommendation、summary 的整包分析結果。
+
+---
+
+### 3️⃣ AI Summary Trigger 架構（v3.2 新增）
+
+```text
+Chat Log / Message Events
+        │
+        ▼
+summary_trigger.py
+（偵測沉默間隔 / 對話結束時機）
+        │
+        ├─ 若達到觸發條件：
+        │       ▼
+        │   呼叫 summary.py / LLM
+        │   生成 AI 案件摘要（summary block）
+        │
+        └─ 若未達條件：
+                ▼
+           不動作（等待更多訊息）
+```
+
+目前專案尚未串接真實資料庫與即時訊息系統，因此：
+
+* `summary_trigger.py` 以模擬/假資料為主
+* 架構上已預留：未來只要接上 DB 與訊息事件（例如：訊息時間戳、客服升級按鈕），即可讓 AI Summary 在實務環境中自動運作。
+
+```
+
 # 🔧 **Stage 1 — Extract & Normalize（資料抽取與規範化）**
 
 由 `extractor.py` 完成，負責：
@@ -255,12 +368,12 @@ uvicorn app.main:app --reload
 
 # 🧪 已完成進度（期末版）
 
-✔ ver3 模組化 Pipeline
-✔ Case1/Case2/Case3 全部能順利跑完
-✔ JSON 格式穩定、有 reason
-✔ 政策引用機制完整
-✔ 前後端 API 串接
-✔ AI Summary Trigger（v3.2）
+✔ ver3 模組化 Pipeline  
+✔ Case1~Case7 全部能順利跑完  
+✔ JSON 格式穩定、有 reason  
+✔ 政策引用機制完整  
+✔ 前後端 API 串接  
+✔ AI Summary 觸發判定
 
 ---
 
@@ -292,7 +405,7 @@ uvicorn app.main:app --reload
 
 ---
 
-# 📜 政策
+# 📜 政策範例
 
 
 ---
