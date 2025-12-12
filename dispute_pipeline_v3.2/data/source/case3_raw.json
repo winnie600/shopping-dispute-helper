@@ -1,0 +1,57 @@
+{
+  "id": "case3",
+  "title": "Sony WH-1000XM4 — Like New (Black)",
+
+  "transactionMethod": "In-app + 7-ELEVEN COD",
+  "disputeOpenedAfterHours": 14,
+  "orderCompleted": false,
+
+  "listingInfo": {
+    "title": "Sony WH-1000XM4 Wireless Headphones — Like New",
+    "listedPrice": "NT$4,200",
+    "condition": "Like new (purchased late 2023)",
+    "disclosedFlaws": "No box, includes carrying pouch (photo 3)",
+    "attributes": "Color Black, Bluetooth, Noise Cancelling, compatible with iPhone/Android",
+    "photos": [
+      { "url": "/images/case3/xm4_overview.jpg", "label": "headphones + pouch overview" },
+      { "url": "/images/case3/xm4_earcup.jpg", "label": "close-up of right earcup" },
+      { "url": "/images/case3/xm4_pouch.jpg", "label": "carrying pouch" }
+    ]
+  },
+  "orderMeta": [
+    { "label": "Order ID", "value": "TW-12033" },
+    { "label": "Transaction Method", "value": "In-app + 7-ELEVEN COD" },
+    { "label": "Dispute Opened After", "value": "14h after pickup" },
+    { "label": "Order Completed", "value": "No" }
+  ],
+  "complaint": "Missing USB-C cable after delivery; listing didn’t claim full set.",
+  "chatLog": [
+    { "timestamp": "2025-10-10 14:02", "sender": "Buyer", "text": "Hi! Are the headphones still available?" },
+    { "timestamp": "2025-10-10 14:05", "sender": "Seller", "text": "Yes, still available. Barely used, almost new." },
+    { "timestamp": "2025-10-10 14:07", "sender": "Buyer", "text": "Are they working fine? Bluetooth and noise cancelling okay?" },
+    { "timestamp": "2025-10-10 14:09", "sender": "Seller", "text": "Everything works perfectly. Battery’s still strong." },
+    { "timestamp": "2025-10-10 14:11", "sender": "Buyer", "text": "Okay. Do they come with any pouch or accessories?" },
+    { "timestamp": "2025-10-10 14:13", "sender": "Seller", "text": "Comes with the pouch shown in the photo, no box." },
+    { "timestamp": "2025-10-10 14:15", "sender": "Buyer", "text": "Got it. Can do NT$4,000?" },
+    { "timestamp": "2025-10-10 14:16", "sender": "Seller", "text": "Sure, deal." },
+    { "timestamp": "2025-10-10 14:18", "sender": "Buyer", "text": "Ship via 7-ELEVEN COD, I’ll pay the 60 TWD fee." },
+    { "timestamp": "2025-10-10 14:19", "sender": "Seller", "text": "Okay, what store should I send it to?" },
+    { "timestamp": "2025-10-10 14:20", "sender": "Buyer", "text": "7-ELEVEN Nanjing East (Zhongshan)." },
+    { "timestamp": "2025-10-10 14:21", "sender": "Seller", "text": "Great, I’ll ship tomorrow." },
+    { "timestamp": "2025-10-10 14:22", "sender": "System", "text": "Order created (Order ID: TW-12033)." },
+
+    { "timestamp": "2025-10-11 09:30", "sender": "System", "text": "Seller shipped via 7-ELEVEN." },
+    { "timestamp": "2025-10-12 10:15", "sender": "System", "text": "Arrived at pickup store (Nanjing East)." },
+    { "timestamp": "2025-10-12 19:20", "sender": "Buyer", "text": "Picked up & paid COD (NT$4,060). Thanks!" },
+
+    { "timestamp": "2025-10-13 09:10", "sender": "Buyer", "text": "Just received the item — works fine, but no USB-C charging cable.\nListing and chat didn’t mention it’s missing, so I assumed it came with everything.\nI’d like to return it for a full refund.", "highlight": true },
+    { "timestamp": "2025-10-13 09:25", "sender": "Seller", "text": "I only sold what’s in the photos. I used the cable for my phone so didn’t include it — thought everyone has one anyway." },
+    { "timestamp": "2025-10-13 09:30", "sender": "Buyer", "text": "I see, but the original box usually includes one." },
+
+    { "timestamp": "2025-10-13 09:35", "sender": "AI", "text": "Dispute logged.\n→ Reviewing listing & chat: no claim of “complete accessories.”\n→ Official Sony package includes a USB-C cable, but Buyer did not ask specifically.\n→ Preliminary finding: No clear fault (Neutral SNAD – lack of clarity on both sides).\n\nSuggested resolution:\nA) Return & Full Refund (Buyer covers 60 TWD shipping)\nOR\nB) Keep item and negotiate a small discount (~5–10% = 200–400 TWD)." },
+
+    { "timestamp": "2025-10-13 09:40", "sender": "Buyer", "text": "Okay, if that’s the case, I’ll keep it — how about a 300 TWD refund?" },
+    { "timestamp": "2025-10-13 09:42", "sender": "Seller", "text": "Sure, I’ll refund 300 TWD to you." },
+    { "timestamp": "2025-10-13 09:43", "sender": "AI", "text": "Agreement confirmed. Dispute closed – partial refund (NT$300)." }
+  ]
+}

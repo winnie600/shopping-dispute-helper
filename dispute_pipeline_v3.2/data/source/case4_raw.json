@@ -1,0 +1,73 @@
+{
+  "id": "case4",
+  "title": "Philips HR2221 Blender",
+  "transactionMethod": "7-11 COD",
+  "disputeOpenedAfterHours": 12,
+  "orderCompleted": false,
+
+  "listingInfo": {
+    "title": "Philips HR2221 – Blender, fully functional, complete accessories",
+    "listedPrice": "NT$850",
+    "condition": "Used (8/10)",
+    "disclosedFlaws": "None",
+    "attributes": "Main unit + cup + lid + blade; blends fruits and small ice; cup shown clean in photos.",
+    "photos": [
+      { "url": "/images/case4/full.jpg", "label": "full product" },
+      { "url": "/images/case4/cup1.jpg", "label": "cup photo 1" },
+      { "url": "/images/case4/cup2.jpg", "label": "cup photo 2" },
+      { "url": "/images/case4/accessories.jpg", "label": "accessories" }
+    ]
+  },
+
+  "orderMeta": [
+    { "label": "Order ID", "value": "TW-13058" },
+    { "label": "Order Created", "value": "2025-11-12 14:45" },
+    { "label": "Seller Shipped", "value": "2025-11-12 18:10" },
+    { "label": "Arrived at Store", "value": "2025-11-13 16:20" },
+    { "label": "Buyer Picked Up", "value": "2025-11-13 20:45" },
+    { "label": "Dispute Opened", "value": "2025-11-14 09:06" }
+  ],
+
+  "complaint": "Buyer claims the blender cup arrived cracked. Seller provided pre-shipment photos showing no cracks. No packaging or unboxing video from either party. It is impossible to determine when the damage occurred (likely logistic damage but unprovable). Not SNAD — Neutral Damage.",
+
+  "chatLog": [
+    { "timestamp": "2025-11-12 13:58", "sender": "Buyer", "text": "Hi, is the blender still available? I want a small one to try out first." },
+    { "timestamp": "2025-11-12 14:01", "sender": "Seller", "text": "Yes, still available. I didn’t use it much—selling because I'm moving." },
+
+    { "timestamp": "2025-11-12 14:03", "sender": "Buyer", "text": "Can it blend well? I mainly blend fruits and occasionally small ice cubes." },
+    { "timestamp": "2025-11-12 14:06", "sender": "Seller", "text": "Yes, works fine. Fruits are smooth, and small ice cubes are okay too. Very stable in my experience." },
+
+    { "timestamp": "2025-11-12 14:07", "sender": "Buyer", "text": "Is the cup still clean? I don’t like cups with too many scratches." },
+    { "timestamp": "2025-11-12 14:10", "sender": "Seller", "text": "There are some signs of use, but overall it’s clean. I'll take photos for you." },
+    { "timestamp": "2025-11-12 14:12", "sender": "Seller", "text": "(Sent two cup photos)" },
+
+    { "timestamp": "2025-11-12 14:15", "sender": "Buyer", "text": "Okay, that works. Are all accessories included?" },
+    { "timestamp": "2025-11-12 14:17", "sender": "Seller", "text": "Yes, all included." },
+
+    { "timestamp": "2025-11-12 14:22", "sender": "Buyer", "text": "Can you do NT$800?" },
+    { "timestamp": "2025-11-12 14:23", "sender": "Seller", "text": "Sure, NT$800 for you." },
+
+    { "timestamp": "2025-11-12 14:24", "sender": "Buyer", "text": "Please ship to 7-11 Zhonghua Store, COD. Thank you." },
+    { "timestamp": "2025-11-12 14:25", "sender": "Seller", "text": "No problem. Shipping fee NT$60, paid at pickup." },
+    { "timestamp": "2025-11-12 14:27", "sender": "Seller", "text": "I’ll ship it this afternoon." },
+
+    { "timestamp": "2025-11-12 14:45", "sender": "System", "text": "Order created — Order ID: TW-13058" },
+    { "timestamp": "2025-11-12 18:10", "sender": "Seller", "text": "Shipped." },
+    { "timestamp": "2025-11-13 16:20", "sender": "System", "text": "Package has arrived at the store." },
+    { "timestamp": "2025-11-13 20:45", "sender": "Buyer", "text": "I picked it up and paid NT$860." },
+
+    { "timestamp": "2025-11-14 08:25", "sender": "Buyer", "text": "I received the item. While washing the cup I found a crack on the side. I really can’t use it like this." },
+    { "timestamp": "2025-11-14 08:32", "sender": "Seller", "text": "Really? Let me find the photos I took before shipping. It definitely wasn’t cracked when I sent it." },
+    { "timestamp": "2025-11-14 08:37", "sender": "Seller", "text": "(Sent pre-shipment photos — cup intact)" },
+    { "timestamp": "2025-11-14 08:40", "sender": "Buyer", "text": "Yes, the cup in your photos isn’t cracked. But the one I received definitely is. I don’t know when it happened. But I can’t use it now." },
+
+    { "timestamp": "2025-11-14 08:45", "sender": "Seller", "text": "Maybe it was damaged during delivery. Was the outer box dented?" },
+    { "timestamp": "2025-11-14 08:48", "sender": "Buyer", "text": "The box looks normal. But the item I received is damaged, so I want to return it." },
+
+    { "timestamp": "2025-11-14 08:52", "sender": "Seller", "text": "A full refund is difficult for me because I have proof the item was intact before shipping. I don’t think this is my fault." },
+    { "timestamp": "2025-11-14 08:58", "sender": "Buyer", "text": "But I can’t use it at all like this…" },
+
+    { "timestamp": "2025-11-14 09:04", "sender": "Buyer", "text": "I just submitted a return request in the app. Please watch for the system notification." },
+    { "timestamp": "2025-11-14 09:06", "sender": "Seller", "text": "…Alright, let’s see how the system handles it." }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "stage2_model": "openai:gpt-4o-mini",
+  "stage3_model": "gemma3:1b"
+}

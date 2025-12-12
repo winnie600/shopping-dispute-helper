@@ -1,0 +1,66 @@
+{
+  "id": "case5",
+  "title": "Nintendo Switch — Buyer changed mind",
+  "transactionMethod": "7-11 COD",
+  "disputeOpenedAfterHours": 16,
+  "orderCompleted": false,
+
+  "listingInfo": {
+    "title": "Nintendo Switch (Standard Model) – Runs smoothly, complete accessories",
+    "listedPrice": "NT$4,500",
+    "condition": "Used (8.5/10)",
+    "disclosedFlaws": "None; seller states fully functional.",
+    "attributes": "Main console, JoyCon, Dock, charging cable; no repairs; screen normal; JoyCon has no drift.",
+    "photos": [
+      { "url": "/images/case5/main.jpg", "label": "console + JoyCon" },
+      { "url": "/images/case5/screen.jpg", "label": "screen on" },
+      { "url": "/images/case5/dock.jpg", "label": "dock + cables" },
+      { "url": "/images/case5/all.jpg", "label": "full set" }
+    ]
+  },
+
+  "orderMeta": [
+    { "label": "Order ID", "value": "TW-14012" },
+    { "label": "Order Created", "value": "2025-10-20 11:35" },
+    { "label": "Seller Shipped", "value": "2025-10-20 17:50" },
+    { "label": "Arrived at Store", "value": "2025-10-21 13:10" },
+    { "label": "Buyer Picked Up", "value": "2025-10-21 19:05" },
+    { "label": "Dispute Opened", "value": "2025-10-22 11:13" }
+  ],
+
+  "complaint": "Buyer says the item is fully functional but they ‘don’t like it / not used to it’ and requests a return. This is Buyer’s Change of Mind — not SNAD.",
+
+  "chatLog": [
+    { "timestamp": "2025-10-20 11:12", "sender": "Buyer", "text": "Hi~ is the console still available?" },
+    { "timestamp": "2025-10-20 11:14", "sender": "Seller", "text": "Yes." },
+
+    { "timestamp": "2025-10-20 11:16", "sender": "Buyer", "text": "Does it run smoothly? I want to see if I can get used to it." },
+    { "timestamp": "2025-10-20 11:20", "sender": "Seller", "text": "Very smooth. I played Zelda and Mario with no issues." },
+
+    { "timestamp": "2025-10-20 11:22", "sender": "Buyer", "text": "Does the JoyCon drift? I heard many have that problem." },
+    { "timestamp": "2025-10-20 11:24", "sender": "Seller", "text": "This one doesn't drift. I just had it serviced." },
+
+    { "timestamp": "2025-10-20 11:26", "sender": "Buyer", "text": "Can you do 4,300?" },
+    { "timestamp": "2025-10-20 11:27", "sender": "Seller", "text": "4,400 for you." },
+
+    { "timestamp": "2025-10-20 11:29", "sender": "Buyer", "text": "OK. Please ship via 7-11 COD to Zhongxiao Xinsheng." },
+    { "timestamp": "2025-10-20 11:30", "sender": "Seller", "text": "Okay, I'll ship this afternoon." },
+
+    { "timestamp": "2025-10-20 11:35", "sender": "System", "text": "Order created – Order ID: TW-14012" },
+    { "timestamp": "2025-10-20 17:50", "sender": "Seller", "text": "Shipped." },
+    { "timestamp": "2025-10-21 13:10", "sender": "System", "text": "Package has arrived at the store." },
+    { "timestamp": "2025-10-21 19:05", "sender": "Buyer", "text": "I picked it up and paid NT$4,060." },
+
+    { "timestamp": "2025-10-22 10:42", "sender": "Buyer", "text": "I received the console. Everything works fine. But… after trying it, I feel it’s not the type of gameplay I imagined. I’m not really used to it. Can I return it?" },
+
+    { "timestamp": "2025-10-22 10:50", "sender": "Seller", "text": "As long as there’s no defect, I can’t accept a return just because it’s ‘not suitable.’ Electronics returns are troublesome and risky. I also stated in the listing that I don’t accept returns due to change of preference." },
+
+    { "timestamp": "2025-10-22 10:54", "sender": "Buyer", "text": "I understand… I’m just not used to it." },
+
+    { "timestamp": "2025-10-22 10:57", "sender": "Seller", "text": "I completely understand, but since there's no issue at all, returning it means I absorb the entire loss. So I really can’t take it back." },
+
+    { "timestamp": "2025-10-22 11:13", "sender": "System", "text": "Buyer submitted a return/refund request. Reason: ‘Does not meet needs / Not used to it.’" },
+
+    { "timestamp": "2025-10-22 11:20", "sender": "Seller", "text": "Seller selected ‘Reject return.’ Reason: ‘Not SNAD / Buyer changed mind.’" }
+  ]
+}
