@@ -42,7 +42,7 @@
 
 * **規則基礎審核（Eligibility Checks）**
 * **政策導向 LLM 判定（Policy-Driven LLM Reasoning）**
-* **AI Summary 自動生成（v3.2 新增）**
+* **AI Summary 自動生成* *
 
 能夠協助平台在早期就給出一致、結構清楚、透明的判定，降低人工工作量。
 
