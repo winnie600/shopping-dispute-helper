@@ -3,9 +3,9 @@
 ---
 ## 更新日誌
 
-後端dispute_pipeline_v3.1 前後端嵌入 (能夠看到生成ai analysis在demo網頁上的顯示)。  
-後端dispute_pipeline_v3.2 新增AI案件摘要觸發機制的功能。  
-前端UI v2.1 解決前端嵌入過程造成的網頁排版錯誤。  
+後端:dispute_pipeline_v3.1 前後端嵌入 (能夠看到生成ai analysis在demo網頁上的顯示)。  
+後端:dispute_pipeline_v3.2 新增AI案件摘要觸發機制的功能。  
+前端:c2c-dispute-ui_v2.1 解決前端嵌入過程造成的網頁排版錯誤。  
 
 ---
 
