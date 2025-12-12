@@ -191,10 +191,8 @@ It is functionally more reliable than v2 and earlier v3 versions.
 
 ```
 
----
 
-如果你想讓我把它 **變成更正式的期末報告用版本** 或是 **加上流程圖、架構圖、badge、彩色 emoji 版 README**，我可以再幫你升級！
-```
+
 
 
 
