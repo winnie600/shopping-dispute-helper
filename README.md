@@ -485,7 +485,7 @@ uvicorn app.main:app --reload
 ---
 
 
-## **4. 解決方案（Outcome）— OUT 系列**
+## **3. 解決方案（Outcome）— OUT 系列**
 
 ### 📌 **OUT-801 — Option A：退貨＋全額退款**
 
@@ -505,8 +505,6 @@ uvicorn app.main:app --reload
 * 避免進一步爭議
 
 退款通常為 **15–30%**。
-
----
 
 ---
 
