@@ -11,7 +11,6 @@
 
 **後端：dispute_pipeline_v3.2**
 ✔ 新增「AI 案件摘要觸發機制」自動偵測沉默時間並生成 summary
-✔ 改善 Stage 2 判定穩定度（避免 reason 消失/Neutral 判錯）
 
 **前端：c2c-dispute-ui_v2.1**
 ✔ 修正前端嵌入後產生的排版錯誤
