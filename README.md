@@ -65,7 +65,6 @@ v3.2 能將整個仲裁流程完整模組化，包含：
 
 ---
 
-````markdown
 ## 🔧 技術架構（Technical Architecture）
 
 本專案後端主要分成兩條路線：
@@ -175,6 +174,7 @@ summary_trigger.py
 
 * `summary_trigger.py` 以模擬/假資料為主
 * 架構上已預留：未來只要接上 DB 與訊息事件（例如：訊息時間戳、客服升級按鈕），即可讓 AI Summary 在實務環境中自動運作。
+
 
 ```
 
