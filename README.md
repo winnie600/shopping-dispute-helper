@@ -266,7 +266,7 @@ Stage 2 是 v3 的核心，由多支模組一起完成：
 
 ---
 
-# ⚡ **v3.2 新增功能：AI Summary Trigger（summary_trigger.py）**
+## ⚡ **v3.2 新增功能：AI Summary Trigger（summary_trigger.py）**
 
 平台真實運作下必須具備：
 
@@ -282,7 +282,7 @@ Stage 2 是 v3 的核心，由多支模組一起完成：
 
 ---
 
-# 🌐 前後端串接（v3.1 完成）
+## 🌐 前後端串接（v3.1 完成）
 
 後端提供 API：
 
@@ -302,7 +302,7 @@ UI (c2c-dispute-ui_v2.1) 可顯示：
 
 ---
 
-# 📂 專案結構（v3.2 最新）
+## 📂 專案結構（v3.2 最新）
 
 ```
 dispute_pipeline_v3/
@@ -337,7 +337,7 @@ dispute_pipeline_v3/
 
 ---
 
-# ▶️ 使用方式
+## ▶️ 使用方式
 
 ### **執行完整 pipeline：**
 
@@ -374,7 +374,7 @@ uvicorn app.main:app --reload
 
 ---
 
-# ❗ 已解決問題
+## ❗ 已解決問題
 
 ### 1. JSON reason 消失
 
@@ -392,7 +392,7 @@ uvicorn app.main:app --reload
 
 ---
 
-# 🎨 UI 設計
+## 🎨 UI 設計
 
 ![image](https://github.com/winnie600/shopping-dispute-helper/blob/main/UI_photo_ver2/messageImage_1765252811370.jpg)
 ![image](https://github.com/winnie600/shopping-dispute-helper/blob/main/UI_photo_ver2/messageImage_1765252857348.jpg)
@@ -404,8 +404,6 @@ uvicorn app.main:app --reload
 
 # 📜 部分政策範例
 以下為虛構 NextBuy C2C 平台的政策摘要，用於 LLM 判定 SNAD / Neutral / IE。
-
----
 
 ## **1. SNAD（與描述不符）判定標準 — SND 系列**
 
@@ -422,7 +420,6 @@ uvicorn app.main:app --reload
 > 裁定：賣家負責 → 退貨＋全額退款
 > 運費由賣家承擔（FEE-A）
 
----
 
 ### 📌 **SND-502 — 不屬於 SNAD**
 
@@ -438,8 +435,6 @@ uvicorn app.main:app --reload
 * 使用痕跡屬合理範圍
 
 > 裁定：雙方皆無過錯 → 可採部分退款（Option B）
-
----
 
 ### 📌 **SND-503 — 證據不足**
 
@@ -465,7 +460,6 @@ uvicorn app.main:app --reload
 
 不符合 → Out of Scope。
 
----
 
 ### 📌 **ELI-302 — 爭議時效內**
 
@@ -473,7 +467,6 @@ uvicorn app.main:app --reload
 
 * 超過 72 小時 → 不受理（逾期）
 
----
 
 ### 📌 **ELI-303 — 訂單未完成**
 
@@ -494,8 +487,6 @@ uvicorn app.main:app --reload
 * SNAD（賣家責任）
 
 賣家承擔運費（FEE-A）。
-
----
 
 ### 📌 **OUT-802 — Option B：保留＋部分退款**
 
