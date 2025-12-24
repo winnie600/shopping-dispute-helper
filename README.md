@@ -504,6 +504,7 @@ uvicorn app.main:app --reload
 * 串接 DB 完整支援「真實對話時間」
 * 整合 AI Summary Trigger 到 UI
 * 自動產生平台內客服升級報告
+* 能夠引導式對話的聊天室機器人
 
 ---
 
